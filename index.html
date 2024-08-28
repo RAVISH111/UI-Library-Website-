@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #pg2flex {
+            display: flex;
+        }
+        #pg2flex > div {
+            border: 1px solid red;
+            width: 30%;
+        }
+        #pg2head{
+            font-family: sans-serif;
+            margin: auto;
+            text-align: center;
+        }
+        #pg2head>h1{
+            font-size: 56px;
+            color: #2D3748;
+            font-weight: 700;
+            margin: 10px;
+        }
+        #pg2head>p{
+            color: #2D3748;
+            font-size: 18px;
+            font-weight: 500;
+            margin:5px;
+        }
+        .pg2imgall img {
+            display: none;
+            width: 100%;
+        }
+
+        .pg2imgall img.active {
+            display: block;
+        }
+        #pg2btn{
+            background-color: #1f1f1f;
+        }
+        hr{
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <div id="pg2head">
+        <h1>Less code. More speed</h1>
+        <p>Spend less time writing UI code and more time building a great</p>
+        <p>experience for your customers.</p>
+    </div>
+    <div id="pg2flex">
+        <div>
+            <div id="pg2btn">
+                <button id="btn1">1</button>
+                <button id="btn2">2</button>
+            </div>
+            <hr>
+            <div class="pg2imgall">
+                <img id="img1" src="https://i.ibb.co/X4THqTb/asdf.png" alt="">
+                <img id="img2" src="https://i.ibb.co/zFbpFh4/new-no-1.png" alt="">
+            </div>
+        </div>
+        <div>
+            <div><img src="https://i.ibb.co/pnt2zKz/output-of-the-code.png" alt=""></div>
+            <div></div>
+            </div>
+    </div>
+</body>
+</html>
+<script>
+    document.addEventListener('DOMContentLoaded',()=>{
+    let btn1 = document.getElementById('btn1');
+    let btn2 = document.getElementById('btn2');
+    let img1 = document.getElementById('img1');
+    let img2 = document.getElementById('img2');
+
+    function showImage(imageToShow) {
+        img1.style.display = 'none';
+        img2.style.display = 'none';
+        imageToShow.style.display = 'block';
+    }
+
+    btn1.addEventListener('click', () => showImage(img1));
+    btn2.addEventListener('click', () => showImage(img2));
+    showImage(img1);
+});
+</script>
