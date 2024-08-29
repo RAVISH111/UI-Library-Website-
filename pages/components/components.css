@@ -67,6 +67,14 @@
 }
 
 
+#cPage2container{
+    border: 3px solid red;
+}
+
+
+
+
+
 @media screen and (max-width: 760px) {
     #cPg1Article{
         width: 90%;
