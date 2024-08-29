@@ -1,0 +1,74 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#cPage1{
+    width: 100%;
+    height: 100vh;
+    background-color: #1a202c;
+}
+
+#cPg1Article{
+    width: 600px;
+    margin: auto;
+    /* border: 1px solid yellow; */
+}
+#cPage1Container{
+    width: 60%;
+    margin: auto;
+    /* border: 1px solid white; */
+}
+
+#cPg1ArticleContainer{
+    font-size: 3em;
+    color: azure;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    margin: 56px 0px 56px;
+
+    
+}
+
+#cPg1ArticleContainer span{
+    /* color: #309794;*/
+    color: aqua;
+}
+
+
+.cPg1MainParent{
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.cPg1MainChild a button{
+    width: 200px;
+    height: 70px;
+    font-size: large;
+    background-color: #309794;
+    border: none;
+    color: azure;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s,transform 0.3s;
+}
+
+.cPg1MainChild a button:hover{
+    background-color: #1c7f7b;
+    /* background-color: aqua; */
+    transform: scale(1.03);
+    border: 2px solid white;
+}
+
+
+@media screen and (max-width: 760px) {
+    #cPg1Article{
+        width: 90%;
+    }
+}
