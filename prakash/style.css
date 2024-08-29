@@ -12,7 +12,7 @@
 #pg4container{
     display: flex;
     flex-direction: column;
-    gap: 60px;
+    gap: 5em;
 }
 
 #pg4container{
@@ -21,7 +21,7 @@
     max-width: 40%; */
     width: 600px;
 
-    border: 1px solid;
+    /* border: 1px solid; */
 }
 
 #pg4Article h1{
@@ -87,4 +87,4 @@
     grid-template-columns: repeat(6,1fr);
     gap: 10px;
     /* grid-template-columns: repeat(auto-fill, minmax(15%, 1fr)); */
-}
+}page4
