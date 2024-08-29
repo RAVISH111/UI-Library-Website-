@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        #pg2seh{
+            font-family: sans-serif;
+            align-items:center;
+            margin: auto;
+            text-align: center;
+            
+        }
+        #pg2seh h1{
+            margin: 2px;
+            color:#2D3748;
+            font-weight: 700;
+            font-size:56px;
+            
+        }
+        #pg2seh p{
+            margin-top: 30px;
+            color: #2D3748;
+            font-size:18px;
+            font-weight: 400;
+        }
+        #pg2newg {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .pg2grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            width: 90%;
+            max-width: 600px;
+            height: auto;
+        }
+        .pg2gi1 {
+            background-color: #4CAF50;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5rem;
+            height: 100px;
+        }
+
+
+        @media (max-width: 770px) {
+            .pg2grid-container {
+                grid-template-columns: repeat(1, 1fr);
+            }
+            .pg2gi1 {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="pg2seh">
+        <h1>An experience you'd expect</h1>
+        <h1>from a design system</h1>
+        <p>Opinionated and designed for daily use.</p>
+    </div>
+    <div id="pg2newg">
+        <div class="pg2grid-container">
+            <div class="pg2gi1">
+                <img src="https://i.ibb.co/QNRnv2Q/m-logo.png" alt="">
+            </div>
+            <div class="pg2gi1">
+                <img src="" alt="">
+            </div>~
+            <div class="pg2gi1">
+                <img src="" alt="">
+            </div>
+            <div class="pg2gi1">
+                <img src="" alt="">
+            </div>
+            <div class="pg2gi1">
+                <img src="" alt="">
+            </div>
+            <div class="pg2gi1">
+                <img src="" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
