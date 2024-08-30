@@ -159,7 +159,10 @@ ul{
 
 
 .v1{
-    background-color: #2D3748;
+    /* background-color: #2D3748; */
+    /* background-color:  #1a202c; */
+    background: linear-gradient(to bottom, #1a202c,#2D3748, #309794);
+
     padding: 0px;
     margin: 0px;
 }
@@ -470,18 +473,3 @@ footer {
     }
 }
 
-
-/* @media (min-width: 1024px) {
-    .card {
-        padding: 2rem;
-    }
-    .card1 {
-        padding: 2rem;
-    }
-    .card1-title {
-        font-size: 3rem;
-    }
-    .card1-subtitle {
-        font-size: 1.5rem;
-    }
-} */
