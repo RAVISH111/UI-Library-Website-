@@ -1,0 +1,151 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#blogPage1{
+    background-color: #1a202c;
+    width: 100%;
+    /* height: 100vh; */
+}
+
+#blogOuterMostContainer{
+    width: 80%;
+    /* border: 1px solid white; */
+    margin: auto;
+    padding: 20px;
+}
+
+#blogHeadder{
+    width: 90%;
+    /* border: 1px solid aqua; */
+    margin: auto;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+}
+
+#blogHeadder>.blogHeadderP1{
+    font-size: 2.5em;
+    font-weight: 500;
+    color: aqua;
+}
+
+.blogHeadderP2{
+    color: azure;
+}
+
+#blogContent{
+    width: 100%;
+    /* border: 1px solid red; */
+    box-sizing: border-box;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    /* position: relative; */
+}
+
+#blogLeft{
+    /* position: fixed; */
+    width: 25%;
+    /* border: 1px solid yellow; */
+    /* position: fixed; */
+}
+#blogRight{
+    width: 70%;
+    /* border: 1px solid yellowgreen; */
+    border-left: 1px solid rgba(240, 255, 255, 0.214);
+    
+    color: azure;
+    display: grid;
+    gap: 30px;
+    box-sizing: border-box;
+}
+.bRightChild{
+    margin-left: 50px;
+}
+
+.blogRightContentOne > p{
+    font-size: 1rem;
+}
+
+.blogRightContentHead{
+    color: rgb(26, 227, 245);
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+li{
+    /* letter-spacing: .3px; */
+    margin-top:2px ;
+}
+
+ul{
+    font-size: 1.2em;
+    width: 97%;
+    /* border: 1px solid red; */
+    margin: auto;
+}
+
+.blogLeftContainerOne{
+    margin: auto;
+    text-align: center;
+    border-bottom: 2px solid white;
+    width: 95%;
+    padding: 20px;
+    margin-top: 4em;
+}
+
+.blogLeftContentTwo{
+    width: 90%;
+    margin: auto;
+    /* border: 1px solid yellow; */
+    margin-top: 20px;
+    box-sizing: border-box;
+    display: grid;
+    gap: 20px;
+
+
+}
+
+.blogLeftSubContent{
+    overflow: hidden;
+
+}
+
+.blogLeftSubContent p{
+    color: azure;
+    font-size: 1.3em;
+    padding: 15px;
+    border-bottom: 1px solid rgba(0, 255, 255, 0.276);
+    text-align: center;
+    cursor: pointer;
+    
+    transition: all 0.3s;
+}
+
+.blogLeftSubContent p:hover{
+    background-color: rgba(255, 255, 255, 0.179);
+    transform: scale(1.1);
+    /* border-radius: 50px; */
+}
+
+@media screen and (max-width:760px){
+    #blogLeft{
+        /* visibility: hidden; */
+        display: none;
+    }
+    body{
+        background-color: #1a202c;
+    }
+    .bRightChild{
+        margin-left: 0px;
+    }
+    #blogRight{
+        border: none;
+        width: 100%;
+    }
+}

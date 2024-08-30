@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PIXEL | Blog</title>
+    <link rel="stylesheet" href="blog.css">
+</head>
+<body>
+    <section id="blogPage1">
+        <div id="blogOuterMostContainer">
+            <div id="blogHeadder">
+                <p class="blogHeadderP1">PIXEL UI 1.3.3 <sup class="superTag"><sup>v</sup></sup></p>
+                <p class="blogHeadderP2">created - @masai | construct week project</p>
+            </div>
+
+            <div id="blogContent">
+                <div id="blogLeft">
+                    <div class="blogLeftContainerOne">
+                        <p style="font-size: 1.4em;color: aquamarine;">PIXEL UI BLOG</p>
+                    </div>
+
+                    <div class="blogLeftContentTwo">
+                        <div class="blogLeftSubContent">
+                            <p>Pixel UI </p>
+                        </div>
+                        <div class="blogLeftSubContent">
+                            <p>Pixel UI versions </p>
+                        </div>
+                        <div class="blogLeftSubContent">
+                            <p>Highlights </p>
+                        </div>
+                        <div class="blogLeftSubContent">
+                            <p>Color Models </p>
+                        </div>
+                        <div class="blogLeftSubContent">
+                            <p>Miscellaneous</p>
+                        </div>
+                        <div class="blogLeftSubContent">
+                            <p>Docs</p>
+                        </div>
+                        <div class="blogLeftSubContent">
+                            <p>Components</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="blogRight">
+
+                    <div class="blogRightContentOne bRightChild">
+                        <p>PIXEL UI v1.3.3 is here with bug fixes, documentation improvements, and more follow-up enhancements for color modes. Keep reading for the highlights!</p>
+                    </div>
+                    <div class="blogRightContentTwo bRightChild">
+                        <p class="blogRightContentHead">Highlights</p>
+                        <ul>
+                            <li><p>Fixed a breaking change introduced with color modes where it was required to manually import <span style="color: aqua;">variables-dark.scss</span> when building Bootstrap with Sass. Now, <span style="color: aqua;">_variables.scss</span> will automatically import _variables-dark.scss. If you were already importing <span style="color: aqua;">_variables-dark.scss</span> manually, you should keep doing it as it won’t break anything and will be the way to go in v6.</p></li>
+                            <li><p>Fixed a regression in the selector engine that wasn’t able to handle multiple IDs anymore.</p></li>
+                        </ul>
+                    </div>
+                    <div class="blogRightContentTwo bRightChild">
+                        <p class="blogRightContentHead">Color Models</p>
+                        <ul>
+                            <li><p>Badges now use the <span style="color: aqua;">.text-bg-*</span> text utilities to be certain that the text is always readable (especially when the customized colors are different in light and dark modes).</p></li>
+                            <li><p>Fixed our <span style="color: aqua;">color-modes.js</span> script to handle the case where the OS is set to light mode and the auto color mode is used on the website. If you copied the script from our docs, you should apply this change to your own script.</p></li>
+                            <li><p>Fixed color schemes description in the color modes documentation to show that color-scheme() only accept <span style="color: aqua;">light</span> and <span style="color: aqua;">dark</span> values as parameters.</p></li>
+                    </div>
+                    <div class="blogRightContentTwo bRightChild">
+                        <p class="blogRightContentHead">Miscellaneous</p>
+                        <ul>
+                            <li><p>Allowed &lt;dl&gt; , &lt;dt&gt; and &lt;dd&gt; in the sanitizer</p></li>
+                            <li><p>Dropped evenly items distribution for modal and offcanvas headers.</p></li>
+                            <li><p>Fixed the accordion CSS selectors to avoid inheritance issues when nesting accordions.</p></li>
+                            <li><p>Fixed the focus ring on focused checked buttons.</p></li>
+                            <li><p>Fixed the product example mobile navbar toggler.</p></li>
+                            <li><p>Changed the RTL processing of carousel control icons.</p></li>
+                    </div>
+                    <div class="blogRightContentTwo bRightChild">
+                        <p class="blogRightContentHead">Docs</p>
+                        <ul>
+                            <li><p>Dropped unnecessary right margin for example code blocks.</p></li>
+                            <li><p>Fixed emphasis text utilities usage in <span style="color: aqua;">background utilities examples</span> section.</p></li>
+                            <li><p>Added an technical explanation on how to render an accordion expanded by default.</p></li>
+                            <li><p>Changed Vite config path import in Vite guide.</p></li>
+                            <li><p>Enhanced the card image description of the <span style="color: aqua;">.card-img-*</span> classes.</p></li>
+                            <li><p>Mentioned <span style="color: aqua;">shift-color()</span> function in the Sass customization page among <span style="color: aqua;">tint-color()</span> and <span style="color: aqua;">shade-color().</span></p></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+            
+        </div>
+    </section>
+</body>
+</html>
