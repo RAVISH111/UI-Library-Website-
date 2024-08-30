@@ -156,8 +156,9 @@ ul{
 
 
 /* varad css footer part */
-
-
+#footerMain{
+    background: linear-gradient(to bottom,#309794,#309794 ,white)
+}
 .v1{
     /* background-color: #2D3748; */
     /* background-color:  #1a202c; */
