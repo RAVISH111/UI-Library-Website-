@@ -5,8 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Button Sizes and Variants Example</title>
     <link rel="stylesheet" href="bstyles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+
+    </style>
 </head>
 <body>
+    <div class="container">
+        <h2>Button</h2>
+        <p>
+            Button component is used to trigger an action or event, such as submitting a form, 
+            opening a Dialog, canceling an action, or performing a delete operation.
+        </p>
+        <div class="button-group">
+            <button class="btn">
+                <i class="fa-brands fa-github"></i> Source
+            </button>
+            <button class="btn">
+                <i class="fa-brands fa-github"></i> Theme source
+            </button>
+            <button class="btn">
+                <i class="fa-brands fa-npm" style="color: #dc1849;"></i> @chakra-ui/button
+            </button>
+        </div>
+    </div>
+    <div class="container">
+        <h2>Import</h2>
+        
+        <div class="code-example">
+            <div class="code-header">
+                <span>EDITABLE EXAMPLE</span>
+                <button class="copy-btn">COPY</button>
+            </div>
+            <pre><code>import { Button, ButtonGroup } from '@chakra-ui/react'</code></pre>
+        </div>
+        <div class="description">
+            <p><strong>Button:</strong> The button component with support for custom icons, spinners, etc.</p>
+            <p><strong>ButtonGroup:</strong> Used to group buttons whose actions are related, with an option to flush them together.</p>
+        </div>
+    </div>
     <div class="container">
         <h2>Usage</h2>
         
@@ -176,5 +213,68 @@
             </div>
         </div>
     </div>
+
+    <div class="container">
+        <h2>Button with icon</h2>
+        <p>You can add left and right icons to the Button component using the <code>leftIcon</code> and <code>rightIcon</code> props respectively.</p>
+        <div class="note">
+            <p>Note: The <code>leftIcon</code> and <code>rightIcon</code> prop values should be react elements NOT strings.</p>
+        </div>
+
+        <div class="button-row">
+            <button class="btn" style="background-color: #2c9a94; color: white; padding: 5px;"><i class="fas fa-envelope"></i> Email</button>
+            <button class="btn" style="color: #2c9a94; background-color: white; padding: 5px;"> Call us <i class="fas fa-arrow-right"></i></button>
+
+        </div>
+
+        <div class="code-example">
+            <div class="code-header">
+                <span>EDITABLE EXAMPLE</span>
+                <button class="copy-btn">COPY</button>
+            </div>
+            <pre><code>&lt;Stack direction='row' spacing={4}&gt;
+    &lt;Button leftIcon=&lt;EmailIcon /&gt; colorScheme='teal' variant='solid'&gt;
+        Email
+    &lt;/Button&gt;
+    &lt;Button rightIcon=&lt;ArrowForwardIcon /&gt; colorScheme='teal' variant='outline'&gt;
+        Call us
+    &lt;/Button&gt;
+&lt;/Stack&gt;</code></pre>
+        </div>
+
+    </div>
+
+    <div class="container">
+        <p>You can also use icons from popular libraries like react-icons and pass it into the button.
+
+        </p>
+        <div class="button-row">
+            <button class="btn" style="color: white;  background-color: #ED64A6; padding: 5px;"><i class="fa-solid fa-wrench"></i> Settings</button>
+            <button class="btn" style="border: 1px solid #63B3ED; color: #63B3ED; padding: 5px;"> Call us <i class="fas fa-phone"></i>  </button>
+
+        </div>
+
+        <div class="code-example">
+            <div class="code-header">
+                <span>EDITABLE EXAMPLE</span>
+                <button class="copy-btn">COPY</button>
+            </div>
+            <pre><code>// import { MdBuild, MdCall } from "react-icons/md"
+
+&lt;Stack direction='row' spacing={4}&gt;
+    &lt;Button leftIcon=&lt;MdBuild /&gt; colorScheme='pink' variant='solid'&gt;
+        Settings
+    &lt;/Button&gt;
+    &lt;Button rightIcon=&lt;MdCall /&gt; colorScheme='blue' variant='outline'&gt;
+        Call us
+    &lt;/Button&gt;
+&lt;/Stack&gt;</code></pre>
+        </div>
+
+    </div>
+    
+    
+    
+
 </body>
 </html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font Size Example</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="tstyles.css">
+    <style>
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Text</h2>
+        <p>
+            Text is used to render text and paragraphs within an interface.
+        </p>
+        <div class="button-group">
+            <button class="btn">
+                <i class="fa-brands fa-github"></i> Source
+            </button>
+            <button class="btn">
+                <i class="fa-brands fa-npm" style="color: #dc1849;"></i> @chakra-ui/button
+            </button>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Import</h2>
+        <div class="code-example">
+            <div class="code-header">
+                <span>EDITABLE EXAMPLE</span>
+                <button class="copy-btn">COPY</button>
+            </div>
+            <pre><code>import { Button, ButtonGroup } from '@chakra-ui/react'</code></pre>
+        </div>
+    </div>
+    <div class="container">
+        <h2>Changing the font size</h2>
+        <p>To increase the font size of the text, you can pass the <code>fontSize</code> prop.</p>
+
+        <div class="font-sizes">
+            <span style="font-size: 4rem;">(6xl) In love with React & Next</span>
+            <span style="font-size: 3rem;">(5xl) In love with React & Next</span>
+            <span style="font-size: 2.25rem;">(4xl) In love with React & Next</span>
+            <span style="font-size: 1.875rem;">(3xl) In love with React & Next</span>
+            <span style="font-size: 1.5rem;">(2xl) In love with React & Next</span>
+            <span style="font-size: 1.25re;">(xl) In love with React & Next</span>
+            <span style="font-size: 1.125rem;">(lg) In love with React & Next</span>
+            <span style="font-size: 1rem;">(md) In love with React & Next</span>
+            <span style="font-size: 0.875rem;">(sm) In love with React & Next</span>
+            <span style="font-size: 0.75rem;">(xs) In love with React & Next</span>
+        </div>
+
+    <div class="code-example">
+        <div class="code-header">
+            <span>EDITABLE EXAMPLE</span>
+            <button class="copy-btn">COPY</button>
+        </div>
+            <pre>
+<code>
+&lt;Stack spacing={3}&gt;
+    &lt;Text fontSize='6xl'&gt;(6xl) In love with React & Next&lt;/Text&gt;
+    &lt;Text fontSize='5xl'&gt;(5xl) In love with React & Next&lt;/Text&gt;
+    &lt;Text fontSize='4xl'&gt;(4xl) In love with React & Next&lt;/Text&gt;
+    &lt;Text fontSize='3xl'&gt;(3xl) In love with React & Next&lt;/Text&gt;
+    &lt;Text fontSize='2xl'&gt;(2xl) In love with React & Next&lt;/Text&gt;
+    &lt;Text fontSize='xl'&gt;(xl) In love with React & Next&lt;/Text&gt;
+    &lt;Text fontSize='lg'&gt;(lg) In love with React & Next&lt;/Text&gt;
+    &lt;Text fontSize='md'&gt;(md) In love with React & Next&lt;/Text&gt;
+    &lt;Text fontSize='sm'&gt;(sm) In love with React & Next&lt;/Text&gt;
+    &lt;Text fontSize='xs'&gt;(xs) In love with React & Next&lt;/Text&gt;
+&lt;/Stack&gt;
+</code>
+            </pre>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Truncate text</h2>
+        <p>If you'd like to truncate the text after a specific number of lines, pass the noOfLines prop. This will render an ellipsis when the text exceeds the width of the viewport or maxWidth prop.</p>
+
+
+    <div class="code-example">
+        <div class="code-header">
+            <span>EDITABLE EXAMPLE</span>
+            <button class="copy-btn">COPY</button>
+        </div>
+            <pre>
+<code>
+&lt;Stack spacing={3}&gt;
+    &lt;Text fontSize='6xl'&gt;(6xl) In love with React & Next&lt;/Text&gt;
+    &lt;Text fontSize='5xl'&gt;(5xl) In love with React & Next&lt;/Text&gt;
+    &lt;Text fontSize='4xl'&gt;(4xl) In love with React & Next&lt;/Text&gt;
+    &lt;Text fontSize='3xl'&gt;(3xl) In love with React & Next&lt;/Text&gt;
+    &lt;Text fontSize='2xl'&gt;(2xl) In love with React & Next&lt;/Text&gt;
+    &lt;Text fontSize='xl'&gt;(xl) In love with React & Next&lt;/Text&gt;
+    &lt;Text fontSize='lg'&gt;(lg) In love with React & Next&lt;/Text&gt;
+    &lt;Text fontSize='md'&gt;(md) In love with React & Next&lt;/Text&gt;
+    &lt;Text fontSize='sm'&gt;(sm) In love with React & Next&lt;/Text&gt;
+    &lt;Text fontSize='xs'&gt;(xs) In love with React & Next&lt;/Text&gt;
+&lt;/Stack&gt;
+</code>
+            </pre>
+        </div>
+    </div>
+
+    
+</body>
+</html>

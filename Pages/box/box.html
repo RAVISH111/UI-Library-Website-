@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Alignment Example</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="box.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="container container1">
+        <h1>Text</h1>
+        <p>Documentation and examples for common text utilities to control alignment, wrapping, weight, and more.</p>
+    </div>
+
+    <div class="container title">
+        <h2>Text alignment</h2>
+        <p>Easily realign text to components with text alignment classes. For start, end, and center alignment, responsive classes are available that use the same viewport width breakpoints as the grid system.</p>
+    </div>
+    <div class="container">
+        <!-- Text Alignment Section -->
+        <div class="alignment-section c1">
+            <p class="text-start">Start aligned text on all viewport sizes.</p>
+            <p class="text-center">Center aligned text on all viewport sizes.</p>
+            <p class="text-end">End aligned text on all viewport sizes.</p>
+
+            <p class="text-sm-end">End aligned text on viewports sized SM (small) or wider.</p>
+            <p class="text-md-end">End aligned text on viewports sized MD (medium) or wider.</p>
+            <p class="text-lg-end">End aligned text on viewports sized LG (large) or wider.</p>
+            <p class="text-xl-end">End aligned text on viewports sized XL (extra large) or wider.</p>
+            <p class="text-xxl-end">End aligned text on viewports sized XXL (extra extra large) or wider.</p>
+        </div>
+        
+        <!-- Code Display Section -->
+        <div class="code-container">
+            <div class="code-header">
+                <h1>HTML</h1>
+                <h1>
+                    <i class="fa-solid fa-bolt copy"></i>
+                    <i class="fa-regular fa-copy copy" ></i>
+                </h1>
+            </div>
+            <textarea readonly>
+<p class="text-start">Start aligned text on all viewport sizes.</p>
+<p class="text-center">Center aligned text on all viewport sizes.</p>
+<p class="text-end">End aligned text on all viewport sizes.</p>
+
+<p class="text-sm-end">End aligned text on viewports sized SM (small) or wider.</p>
+<p class="text-md-end">End aligned text on viewports sized MD (medium) or wider.</p>
+<p class="text-lg-end">End aligned text on viewports sized LG (large) or wider.</p>
+<p class="text-xl-end">End aligned text on viewports sized XL (extra large) or wider.</p>
+<p class="text-xxl-end">End aligned text on viewports sized XXL (extra extra large) or wider.</p>
+            </textarea>
+        </div>
+    </div>
+
+    <div class="container title" style="background-color: aqua; padding: 10px; font-size: 1.2rem;">
+        <p>Note that we don’t provide utility classes for justified text. While, aesthetically, justified text might look more appealing, it does make word-spacing more random and therefore harder to read.</p>
+    </div>
+
+    <div class="container title">
+        <h2>Text wrapping and overflow </h2>
+        <p>Wrap text with a <span>.text-wrap</span> class.</p>
+    </div>
+    <div class="container">
+        <div class="badge text-bg-primary text-wrap c1" style="width: 6rem;">
+            This text should wrap.
+        </div>
+        
+        <!-- Code Display Section -->
+        <div class="code-container">
+            <div class="code-header">
+                <h1>HTML</h1>
+                <h1>
+                    <i class="fa-solid fa-bolt copy"></i>
+                    <i class="fa-regular fa-copy copy" ></i>
+                </h1>
+            </div>
+            <textarea readonly>
+<div class="badge text-bg-primary text-wrap" style="width: 6rem;">
+    This text should wrap.
+</div>
+             </textarea>
+        </div>
+    </div>
+
+    <div class="container title">
+        <p>Wrap text with a <span> .text-wrap </span> class.</p>
+    </div>
+    <div class="container">
+        <div class="text-nowrap bg-body-secondary border c1" style="width: 8rem;">
+            This text should overflow the parent.
+          </div>
+        
+        <!-- Code Display Section -->
+        <div class="code-container">
+            <div class="code-header">
+                <h1>HTML</h1>
+                <h1>
+                    <i class="fa-solid fa-bolt copy"></i>
+                    <i class="fa-regular fa-copy copy" ></i>
+                </h1>
+            </div>
+            <textarea readonly>
+<div class="text-nowrap bg-body-secondary border" style="width: 8rem;">
+  This text should overflow the parent.
+</div>
+             </textarea>
+        </div>
+    </div>
+
+    <div class="container title">
+        <h1>Word break</h1>
+        <p>Prevent long strings of text from breaking your components’ layout by using <span>.text-break</span> to set <span>word-wrap: break-word</span> and <span>word-break: break-word. </span>We use <span>word-wrap</span> instead of the more common <span>overflow-wrap</span> for wider browser support, and add the deprecated <span>word-break: break-word </span> to avoid issues with flex containers.</p>
+    </div>
+    <div class="container">
+        <p class="text-break c1">mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm</p>
+        
+        <!-- Code Display Section -->
+        <div class="code-container">
+            <div class="code-header">
+                <h1>HTML</h1>
+                <h1>
+                    <i class="fa-solid fa-bolt copy"></i>
+                    <i class="fa-regular fa-copy copy" ></i>
+                </h1>
+            </div>
+            <textarea readonly>
+<p class="text-break">mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm</p>
+             </textarea>
+        </div>
+    </div>
+
+    
+    <div class="container title" style="background-color:bisque; padding: 10px; font-size: 1.2rem;">
+        <p>Note that <a href="">breaking words isn’t possible in Arabic,</a> which is the most used RTL language. Therefore <span> .text-break </span> is removed from our RTL compiled CSS.</p>
+    </div>
+
+    <div class="container title">
+        <h1>Text transform</h1>
+        <p>Transform text in components with text capitalization classes.</p>
+    </div>
+    <div class="container">
+        <div class="c1">
+            <p class="text-lowercase">Lowercased text.</p>
+            <p class="text-uppercase">Uppercased text.</p>
+            <p class="text-capitalize">CapiTaliZed text.</p>
+        </div>
+
+        <!-- Code Display Section -->
+        <div class="code-container">
+            <div class="code-header">
+                <h1>HTML</h1>
+                <h1>
+                    <i class="fa-solid fa-bolt copy"></i>
+                    <i class="fa-regular fa-copy copy" ></i>
+                </h1>
+            </div>
+            <textarea readonly>
+<p class="text-lowercase">Lowercased text.</p>
+<p class="text-uppercase">Uppercased text.</p>
+<p class="text-capitalize">CapiTaliZed text.</p>
+
+            </textarea>
+        </div>
+    </div>
+    <div class="container title" style="margin: 0 auto;">
+        <p>Note how <span>.text-capitalize</span> only changes the first letter of each word, leaving the case of any other letters unaffected.
+    </div>
+
+
+    <div class="container title">
+        <h1>Font size </h1>
+        <p>Quickly change the <span>font-size</span> of text. While our heading classes (e.g.,<span> .h1–.h6)</span> apply <span>font-size, font-weight,</span> and <span>line-height</span>, these utilities only apply <span>font-size.</span> Sizing for these utilities matches HTML’s heading elements, so as the number increases, their size decreases.</p>
+    </div>
+    <div class="container">
+        <div class="c1">
+            <p class="fs-1">.fs-1 text</p>
+            <p class="fs-2">.fs-2 text</p>
+            <p class="fs-3">.fs-3 text</p>
+            <p class="fs-4">.fs-4 text</p>
+            <p class="fs-5">.fs-5 text</p>
+            <p class="fs-6">.fs-6 text</p>
+        </div>
+
+        <!-- Code Display Section -->
+        <div class="code-container">
+            <div class="code-header">
+                <h1>HTML</h1>
+                <h1>
+                    <i class="fa-solid fa-bolt copy"></i>
+                    <i class="fa-regular fa-copy copy" ></i>
+                </h1>
+            </div>
+            <textarea readonly>
+<p class="fs-1">.fs-1 text</p>
+<p class="fs-2">.fs-2 text</p>
+<p class="fs-3">.fs-3 text</p>
+<p class="fs-4">.fs-4 text</p>
+<p class="fs-5">.fs-5 text</p>
+<p class="fs-6">.fs-6 text</p>
+            </textarea>
+        </div>
+    </div>
+    <div class="container title" style="margin: 0 auto;">
+        <p>Customize your available <span>font-sizes</span> by modifying the <span>$font-sizes</span> Sass map.</p>
+    </div>
+
+
+
+    <div class="container title">
+        <h1>Font weight and italics  </h1>
+        <p>Quickly change the <span>font-weight</span> or <span>font-style</span> of text with these utilities. <span>font-style </span>utilities are abbreviated as <span>.fst-* </span>and <span> font-weight </span> utilities are abbreviated as <span>.fw-*.</span></p>
+    </div>
+    <div class="container">
+        <div class="c1">
+            <p class="fw-bold">Bold text.</p>
+            <p class="fw-bolder">Bolder weight text (relative to the parent element).</p>
+            <p class="fw-semibold">Semibold weight text.</p>
+            <p class="fw-medium">Medium weight text.</p>
+            <p class="fw-normal">Normal weight text.</p>
+            <p class="fw-light">Light weight text.</p>
+            <p class="fw-lighter">Lighter weight text (relative to the parent element).</p>
+            <p class="fst-italic">Italic text.</p>
+            <p class="fst-normal">Text with normal font style</p>
+        </div>
+
+        <!-- Code Display Section -->
+        <div class="code-container">
+            <div class="code-header">
+                <h1>HTML</h1>
+                <h1>
+                    <i class="fa-solid fa-bolt copy"></i>
+                    <i class="fa-regular fa-copy copy" ></i>
+                </h1>
+            </div>
+            <textarea readonly>
+<p class="fw-bold">Bold text.</p>
+<p class="fw-bolder">Bolder weight text (relative to the parent element).</p>
+<p class="fw-semibold">Semibold weight text.</p>
+<p class="fw-medium">Medium weight text.</p>
+<p class="fw-normal">Normal weight text.</p>
+<p class="fw-light">Light weight text.</p>
+<p class="fw-lighter">Lighter weight text (relative to the parent element).</p>
+<p class="fst-italic">Italic text.</p>
+<p class="fst-normal">Text with normal font style</p>
+            </textarea>
+        </div>
+    </div>
+
+    <div class="container title">
+        <h1>Line height </h1>
+        <p>Change the line height with <span>.lh-*</span> utilities.</p>
+    </div>
+    <div class="container">
+        <div class="c1">
+            <p class="lh-1">This is a long paragraph written to show how the line-height of an element is affected by our utilities. Classes are applied to the element itself or sometimes the parent element. These classes can be customized as needed with our utility API.</p>
+            <p class="lh-sm">This is a long paragraph written to show how the line-height of an element is affected by our utilities. Classes are applied to the element itself or sometimes the parent element. These classes can be customized as needed with our utility API.</p>
+            <p class="lh-base">This is a long paragraph written to show how the line-height of an element is affected by our utilities. Classes are applied to the element itself or sometimes the parent element. These classes can be customized as needed with our utility API.</p>
+            <p class="lh-lg">This is a long paragraph written to show how the line-height of an element is affected by our utilities. Classes are applied to the element itself or sometimes the parent element. These classes can be customized as needed with our utility API.</p>
+        </div>
+
+        <!-- Code Display Section -->
+        <div class="code-container">
+            <div class="code-header">
+                <h1>HTML</h1>
+                <h1>
+                    <i class="fa-solid fa-bolt copy"></i>
+                    <i class="fa-regular fa-copy copy" ></i>
+                </h1>
+            </div>
+            <textarea readonly>
+<p class="lh-1">This is a long paragraph written to show how the line-height of an element is affected by our utilities. Classes are applied to the element itself or sometimes the parent element. These classes can be customized as needed with our utility API.</p>
+<p class="lh-sm">This is a long paragraph written to show how the line-height of an element is affected by our utilities. Classes are applied to the element itself or sometimes the parent element. These classes can be customized as needed with our utility API.</p>
+<p class="lh-base">This is a long paragraph written to show how the line-height of an element is affected by our utilities. Classes are applied to the element itself or sometimes the parent element. These classes can be customized as needed with our utility API.</p>
+<p class="lh-lg">This is a long paragraph written to show how the line-height of an element is affected by our utilities. Classes are applied to the element itself or sometimes the parent element. These classes can be customized as needed with our utility API.</p>
+            </textarea>
+        </div>
+    </div>
+
+
+    <div class="container title">
+        <h1>Monospace</h1>
+        <p>Change a selection to our monospace font stack with <span>.font-monospace.</span></p>
+    </div>
+    <div class="container">
+        <div class="c1">
+            <p class="font-monospace">This is in monospace</p>
+        </div>
+
+        <!-- Code Display Section -->
+        <div class="code-container">
+            <div class="code-header">
+                <h1>HTML</h1>
+                <h1>
+                    <i class="fa-solid fa-bolt copy"></i>
+                    <i class="fa-regular fa-copy copy" ></i>
+                </h1>
+            </div>
+            <textarea readonly>
+<p class="font-monospace">This is in monospace</p>
+            </textarea>
+        </div>
+    </div>
+
+
+    <div class="container title">
+        <h1>Reset color</h1>
+        <p>Reset a text or link’s color with <span>.text-reset</span>, so that it inherits the color from its parent.</p>
+    </div>
+    <div class="container">
+        <div class="c1">
+            <p class="text-body-secondary">
+                Secondary body text with a <a href="#" class="text-reset">reset link</a>.
+              </p>
+        </div>
+
+        <!-- Code Display Section -->
+        <div class="code-container">
+            <div class="code-header">
+                <h1>HTML</h1>
+                <h1>
+                    <i class="fa-solid fa-bolt copy"></i>
+                    <i class="fa-regular fa-copy copy" ></i>
+                </h1>
+            </div>
+            <textarea readonly>
+<p class="text-body-secondary">
+  Secondary body text with a <a href="#" class="text-reset">reset link</a>.
+</p>
+             </textarea>
+        </div>
+    </div>
+
+
+    <div class="container title">
+        <h1>Text decoration </h1>
+        <p>Decorate text in components with text decoration classes.</p>
+    </div>
+    <div class="container">
+        <div class="c1">
+            <p class="text-decoration-underline">This text has a line underneath it.</p>
+            <p class="text-decoration-line-through">This text has a line going through it.</p>
+            <a href="#" class="text-decoration-none">This link has its text decoration removed</a>
+        </div>
+
+        <!-- Code Display Section -->
+        <div class="code-container">
+            <div class="code-header">
+                <h1>HTML</h1>
+                <h1>
+                    <i class="fa-solid fa-bolt copy"></i>
+                    <i class="fa-regular fa-copy copy" ></i>
+                </h1>
+            </div>
+            <textarea readonly>
+<p class="text-decoration-underline">This text has a line underneath it.</p>
+<p class="text-decoration-line-through">This text has a line going through it.</p>
+<a href="#" class="text-decoration-none">This link has its text decoration removed</a>
+             </textarea>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+
+</html>
