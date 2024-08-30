@@ -5,11 +5,135 @@
 
 }
 
+/* ------------------------navbar------------------------------------- */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+}
 
+
+header {
+    background-color: #309794;
+   
+    margin: 0 auto;
+    text-align: center;
+}
+
+nav img {
+    width:3.5rem;
+}
+
+.navbar {
+    padding: 10px;
+}
+
+.navbar-toggler {
+    border-color: #ddd;
+}
+
+.navbar-toggler-icon {
+    color: #333;
+}
+
+.vm1{
+    padding: 0px;
+    margin: 0px;
+}
+
+.vm1 .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1rem;
+    text-align: center;
+}
+
+.vm1 .card {
+    color: black;
+    border: none;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.vm1 .card1 {
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    padding: 1rem;
+}
+
+.vm1 .card1 .span2{
+    color: #309794;
+
+}
+.vm1 .card1 i{
+    padding-left: 0.3rem;
+}
+
+
+
+.vm1 .card1-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color:black;
+}
+
+
+
+.vm1 .card1-subtitle {
+    font-size: 1rem;
+    color: #A0AEC0;
+}
+
+
+.vm1 .btn {
+    padding: 0.7rem 2rem;
+    color: black;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    background-color: #e3e8f1;
+    border: none;
+}
+
+
+
+.support-section {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1rem;
+    text-align: center;
+    text-align: center;
+}
+
+.support-section h2 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: #008080; /* Optional: match the color to the theme */
+    letter-spacing: 0.1em;
+}
+
+.logo-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.logo-item {
+    flex: 2 2 250px; /* Flex-basis allows wrapping and ensures items are responsive */
+    max-width: 200px; /* Maximum width for larger screens */
+}
+
+.logo-item img {
+    width: 100%;
+    height: auto;
+}
 /* --------------------------------page2-part1------------------------------------ */
 
 
 .pg2-part1-2{
+    margin-top: 100px;
     padding:10% 12% 5 12%;
 }
 .pg2-part1-2-heading{
@@ -89,6 +213,7 @@
         align-items: center;
     }
     button{
+        cursor: pointer;
         font-size: larger;
         color: white;
         border: none;
@@ -98,6 +223,9 @@
         background-color: #309794;;
 
     } 
+    button:hover{
+       background-color: #6cd0ce;
+    }
 }
 #pg2-part2div2{
     padding-top: 5rem;
@@ -268,3 +396,477 @@ body{
         padding: 0 0% 0 10%;
     }
 }
+
+
+
+/* ------------------prakash page4------------------------- */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#page4{
+    width: 100%;
+    /* height: 100vh; */
+    background-color: #309794;
+}
+
+#pg4container{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 5em;
+    width: 600px;
+    /* border: 1px solid; */
+}
+
+
+#pg4Article h1{
+    font-size: 3em;
+    color: azure;
+    text-align: center;
+    margin: 56px 0px 16px;
+}
+
+#pg4Article p{
+    width: 90%;
+    margin: auto;
+    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+    /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+    font-size: 1.1em;
+    color: #a7dcd8;
+    text-align: center;
+}
+
+#pg4Article2{
+    /* margin-top: 10px; */
+    display: grid;
+    gap: 20px;
+}
+
+.pg4Article2Box{
+    background-color: azure;
+    display: flex;
+    align-items: center;
+    padding: 24px;
+    border-radius: 10px;
+    justify-content: space-between;
+    transition: all 0.5s;
+}
+.pg4Article2Box:hover{
+    transform: scale(1.05);
+}
+
+.pg4Article2SubBox1{
+    display: flex;
+    gap: 16px;
+}
+
+.p4Article2btn button{
+    width: 112px;
+    height: 40px;
+    background-color: #309794;
+    border: none;
+    font-size: 1em;
+    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+    border-radius: 5px;
+    font-weight: 600;
+    transition: all 0.5s;
+
+}
+
+.p4Article2btn button:hover{
+    background-color: #267875;
+}
+
+
+#pg4MainSponsor{
+    display: grid;
+    width: 95%;
+    /* border: 1px solid red; */
+    margin: auto;
+    grid-template-columns: repeat(6,1fr);
+    gap: 10px;
+    /* grid-template-columns: repeat(auto-fill, minmax(15%, 1fr)); */
+}
+.pg4MainSponsorLogo{
+    transition: all 0.5s;
+}
+.pg4MainSponsorLogo:hover{
+    transform: scale(1.2);
+}
+
+
+@media screen and (max-width: 650px) {
+    #pg4container{
+        width: 90%;
+        /* background-color: black; */
+    }
+
+    #pg4MainSponsor{
+            /* grid-template-columns: repeat(auto-fill, minmax(70px, 1fr)); */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+}
+
+
+
+/* ---------------------footer varad------------------------------- */
+
+
+.v1{
+    background-color: #2D3748;
+    padding: 0px;
+    margin: 0px;
+}
+
+.v1 .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1rem;
+    text-align: center;
+}
+
+.v1 .card {
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.v1 .card1 {
+    width: 100%;
+    max-width: 450px;
+    margin: auto;
+    padding: 1rem;
+}
+.v1 .card1 .span1{
+    padding: 0.2rem;
+    background-color: #c09146;
+    font-size: 0.7rem;
+    font-weight: bold;
+    border-radius: 2px;
+    color: black;
+
+}
+.v1 .card1 .span2{
+    color: aqua;
+
+}
+.v1 .card1 i{
+    padding-left: 0.3rem;
+}
+
+
+
+.v1 .card1-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+
+
+.v1 .card1-subtitle {
+    font-size: 1rem;
+    color: #A0AEC0;
+}
+
+
+.v1 .btn {
+    padding: 0.7rem 2rem;
+    background-color: #3b3e45;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    border: none;
+}
+
+.v1 .image-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+
+
+
+
+.v2{
+    padding: 0px;
+    margin: 0px;
+}
+
+.v2 .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1rem;
+    text-align: center;
+}
+
+.v2 .card {
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.v2 .card1 {
+    width: 100%;
+    max-width: 450px;
+    margin: auto;
+    padding: 1rem;
+}
+
+.v2 .fa-microphone{
+    text-align: center;
+    font-size: 3rem;
+    padding: 1.5rem;
+    background-color: #ebebeb;
+    border-radius: 50%;
+}
+
+
+.v2 .card1-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: black;
+}
+
+
+
+.v2 .card1-subtitle {
+    font-size: 0.9rem;
+    color: #A0AEC0;
+}
+
+
+.v2 .btn {
+    padding: 0.7rem 2rem;
+    background-color: #309794;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    border: none;
+}
+
+
+
+.v3 .top-banner {
+    background-color: #5865F2;
+    padding: 20px 10px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: left;
+    flex-wrap: wrap;
+}
+
+.v3 .banner-text {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    max-width: 70%;
+}
+
+.v3 .banner-text h2 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.v3 .banner-text p {
+    margin: 5px 0 0;
+    font-size: 1rem;
+}
+
+.v3 .join-button {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+
+footer {
+    color: black;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+.footer-content {
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-content p {
+    margin: 1rem;
+    font-size: 1rem;
+}
+
+.flag {
+    font-size: 1.2rem;
+}
+.social-icons {
+    margin: 1rem;
+    display: flex; 
+    gap: 15px; 
+    justify-content: center; 
+}
+
+
+.social-icons a {
+    color: rgba(77, 72, 72, 0.486);
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+
+.deploy-button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    .vm1 .container {
+        padding: 0px;
+    }
+    .vm1 .card1 {
+        padding: 0;
+    }
+    .vm1 .card1-title {
+        font-size: 2.5rem;
+    }
+    .vm1 .card1-subtitle {
+        font-size: 1.25rem;
+    }
+
+    
+    .v1 .container {
+        padding: 0px;
+    }
+    .v1 .card1 {
+        padding: 0;
+    }
+    .v1 .card1-title {
+        font-size: 2.5rem;
+    }
+    .v1 .card1-subtitle {
+        font-size: 1.25rem;
+    }
+    .v1 .image-section {
+        padding: 1rem;
+    }
+
+
+    .v2 .container {
+        padding: 0px;
+    }
+    .v2 .card1 {
+        padding: 0;
+    }
+    .v2 .card1-title {
+        font-size: 2.5rem;
+    }
+    .v2 .card1-subtitle {
+        font-size: 0.9rem;
+
+    }
+
+    .v3 .top-banner {
+        flex-direction: column;
+        text-align: center;
+    }
+
+
+    .v3 .banner-text {
+        text-align: start;
+        max-width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .footer .social-icons {
+        order: 2;
+    }
+
+    .footer .deploy-button {
+        order: 3;
+    }
+
+    
+}
+
+@media (min-width: 768px) {
+    .vm1 .container {
+        padding: 1rem;
+    }
+    .vm1 .card1 {
+        padding: 1.5rem;
+    }
+    .vm1 .card1-title {
+        font-size: 2.5rem;
+    }
+    .vm1 .card1-subtitle {
+        font-size: 1.25rem;
+    }
+    .v1 .container {
+        padding: 1rem;
+    }
+    .v1 .card1 {
+        padding: 1.5rem;
+    }
+    .v1 .card1-title {
+        font-size: 2.5rem;
+    }
+    .v1 .card1-subtitle {
+        font-size: 1.25rem;
+    }
+    .v1 .image-section {
+        padding: 1rem;
+    }
+
+    .v2 .container {
+        padding: 1rem;
+    }
+    .v2 .card1 {
+        padding: 1.5rem;
+    }
+    .v2 .card1-title {
+        font-size: 2.5rem;
+    }
+    .v2 .card1-subtitle {
+        font-size: 0.9rem;
+    }
+}
+
+
+/* @media (min-width: 1024px) {
+    .card {
+        padding: 2rem;
+    }
+    .card1 {
+        padding: 2rem;
+    }
+    .card1-title {
+        font-size: 3rem;
+    }
+    .card1-subtitle {
+        font-size: 1.5rem;
+    }
+} */
