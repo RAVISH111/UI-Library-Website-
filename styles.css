@@ -10,18 +10,17 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     color: white;
+    padding-top: 70px; /* This ensures content doesn't hide under the navbar */
 }
-
 
 header {
     background-color: #309794;
-   
     margin: 0 auto;
     text-align: center;
-}
-
-nav img {
-    width:3.5rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensures navbar stays above other elements */
 }
 
 .navbar {
@@ -34,6 +33,10 @@ nav img {
 
 .navbar-toggler-icon {
     color: #333;
+}
+
+nav img {
+    width: 3.5rem;
 }
 
 .vm1{

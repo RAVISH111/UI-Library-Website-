@@ -10,7 +10,6 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../pages.css">
-
 </head>
 
 <body>
@@ -98,118 +97,45 @@
 
         <!-- Main Content -->
         <div class="main-content">
-    <div class="container container1">
-        <h1>Close button</h1>
-        <p>A generic close button for dismissing content like modals and alerts.</p>
-    </div>
 
-    <div class="container title">
-        <h2>Example </h2>
-        <p>Provide an option to dismiss or close a component with <span>.btn-close. </span> Default styling is limited, but highly customizable. Modify the Sass variables to replace the default <span>background-image. </span> Be sure to include text for screen readers, as we’ve done with <span>aria-label.</span></p>
-    </div>
-    <div class="container">
-       <div class="c1">
-            <button type="button" class="btn-close" aria-label="Close"></button>
-        </div>
-        
-        <div class="code-container">
-            <div class="code-header">
-                <h1>HTML</h1>
-                <h1>
-                    <i class="fa-solid fa-bolt copy"></i>
-                    <i class="fa-regular fa-copy copy" ></i>
-                </h1>
-            </div>
-            <textarea readonly>
-<button type="button" class="btn-close" aria-label="Close"></button>
-            </textarea>
-        </div>
-    </div>
 
-    <div class="container title">
-        <h2>Disabled state </h2>
-        <p>Disabled close buttons change their <span>opacity</span>. We’ve also applied <span>pointer-events: none  </span>and <span>user-select: none</span> to preventing hover and active states from triggering.        </p>
-    </div>
-    <div class="container">
-        <div class=" c1" >
-            <button type="button" class="btn-close" disabled aria-label="Close"></button>
-        </div>
-        
-        <!-- Code Display Section -->
-        <div class="code-container">
-            <div class="code-header">
-                <h1>HTML</h1>
-                <h1>
-                    <i class="fa-solid fa-bolt copy"></i>
-                    <i class="fa-regular fa-copy copy" ></i>
-                </h1>
-            </div>
-            <textarea readonly>
-<button type="button" class="btn-close" disabled aria-label="Close"></button>
-             </textarea>
-        </div>
-    </div>
 
-    <div class="container title">
-        <h1>Dark variant </h1>
-        <span style="border-radius: 5px; color: black; background-color:bisque; padding: 10px; font-size: 1.0rem;">Deprecated in v5.3.0</span>
-    </div>
-    <div class="container title" style="background-color:bisque; padding: 10px; font-size: 1.2rem;">
-        <p>Heads up! As of v5.3.0, the <span>.btn-close-white</span> class is deprecated. Instead, use <span>data-bs-theme="dark"</span> to change the color mode of the close button.</p>
-    </div>
-    <div class="container title" style="margin: 0 auto;">
-        <p>Add <span>data-bs-theme="dark" </span>to the <span>.btn-close </span>, or to its parent element, to invert the close button. This uses the <span>filter</span> property to invert the <span>background-image</span> without overriding its value.</p>
-    </div>
 
-    <div class="container">
-        <div class="c1" style="background-color: black; padding: 5px;">
-            <div data-bs-theme="dark">
-                <button type="button" class="btn-close" aria-label="Close"></button>
-                <button type="button" class="btn-close" disabled aria-label="Close"></button>
-             </div>
-        </div>
- 
-        
-        <!-- Code Display Section -->
-        <div class="code-container">
-            <div class="code-header">
-                <h1>HTML</h1>
-                <h1>
-                    <i class="fa-solid fa-bolt copy"></i>
-                    <i class="fa-regular fa-copy copy" ></i>
-                </h1>
-            </div>
-            <textarea readonly>
-<div data-bs-theme="dark">
-  <button type="button" class="btn-close" aria-label="Close"></button>
-  <button type="button" class="btn-close" disabled aria-label="Close"></button>
-</div>
-             </textarea>
-        </div>
-    </div>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+    </div>
     
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
-</div>
-    
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        var accordions = document.getElementsByClassName("accordion");
 
-<script>
-    var accordions = document.getElementsByClassName("accordion");
-
-    for (var i = 0; i < accordions.length; i++) {
-        accordions[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var panel = this.nextElementSibling;
-            if (panel.style.display === "block") {
-                panel.style.display = "none";
-            } else {
-                panel.style.display = "block";
-            }
-        });
-    }
-</script>
+        for (var i = 0; i < accordions.length; i++) {
+            accordions[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
 
 </body>
 
