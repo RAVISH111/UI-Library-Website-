@@ -1,0 +1,116 @@
+body,
+h1,
+h2,
+p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+.container {
+
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+h2 {
+    font-size: 1.5em;
+    color: #333;
+}
+
+
+p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+
+
+.code-example {
+    background-color: #2D3748;
+    color: #E2E8F0;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+
+pre {
+    background-color: rgba(128, 128, 128, 0.367);
+    border-radius: 5px;
+    margin: 0;
+    padding: 15px;
+    color: #67e392;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+code {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-size: 1em;
+}
+
+.biggerText{
+    font-size: 2.3em;
+    color: #333;
+}
+.subContainerParent{
+    width: 100%;
+}
+
+/* Default styling */
+.subContainer1 {
+    display: flex;
+    padding: 10px;
+    border-bottom: 1px solid;
+    flex-wrap: wrap; /* Allows wrapping */
+}
+
+.subContainer1p1 {
+    flex-basis: 20%;
+    min-width: 150px; /* Ensures a minimum width */
+}
+
+.subContainer1p2 {
+    flex-basis: 80%;
+    min-width: 150px; /* Ensures a minimum width */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+    .subContainer1p1, .subContainer1p2 {
+        flex-basis: 100%; /* Take full width on small screens */
+        min-width: 100px; /* Remove min-width constraint */
+    }
+}
+
+
+
+/* 
+.subContainer1{
+    display: flex;
+    padding: 10px;
+    border-bottom: 1px solid;
+    flex-wrap: wrap;
+}
+.subContainer1p1{
+    flex-basis: 20%;
+
+}
+.subContainer1p2{
+    flex-basis: 78%;
+
+} */
