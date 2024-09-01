@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-
 }
 
 /* ------------------------navbar------------------------------------- */
@@ -13,8 +12,120 @@ body {
     padding-top: 70px; /* This ensures content doesn't hide under the navbar */
 }
 
+
+/* ------------------------------light/dark------------------------------------------ */
+:root{
+    --bg-main:#309794;
+    --bg-primary:black;
+    --bg-part:white;
+    --bg-green:#309794;
+    --bg-w-g:white;
+}
+
+:root .dark-mode{
+    --bg-main:#1a202c;
+    --bg-primary:#ecf2ff;
+    --bg-part:#1a202c;
+    --bg-green:#309794;
+    --bg-w-g:#29313f;
+
+}
+
+
+/* -------------------------------------------------toggle-bar----------------------------------------------- */
+
+#checkbox{
+    visibility: hidden;
+}
+
+.toggle-btn{
+    /* background: red; */
+    margin-left: 40rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+}
+  
+.toggle-ball{
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background:var(--bg-main);
+    display: inline-block;
+    position: absolute;
+    top: .5rem;
+    left: .5rem;
+    transition: all .2s linear;
+}
+
+
+.toggle-label{
+    width: 3.5rem;
+    height: 2rem;
+    background: var(--bg-primary);
+    display: inline-block;
+    position: relative;
+    border-radius: 10rem;
+    bottom: 1.2rem;
+}
+
+#checkbox:checked + .toggle-label .toggle-ball{
+    background: #1a202c;
+    transform: translateX(1.5rem);
+} 
+
+
+/* ------------------------------------------------------------------------------------------------------------ */
+
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~` */
+
+#grey{
+    background: var(--bg-part);
+}
+#pg3-p2-item1{
+    background: var(--bg-w-g)
+}
+
+#main2{
+    background: var(--bg-part);
+    color:var(--bg-primary);
+}
+
+#main1 {
+    background:var(--bg-part1);
+}
+#pp{
+    background: var(--bg-w-g);
+}
+#aa{
+    background:var(--bg-w-g);
+}
+#oo{
+    color:var(--bg-primary);
+}
+#tt{
+    color:var(--bg-part);
+    
+}
+
+.navbar {
+    padding: 10px;
+    background: var(--bg-green);
+    color:var(--bg-primary)}
+#qqq{
+    background: var(--bg-part);
+}
+#qq{
+    color: var(--bg-primary);
+}
+#clr{
+    color:black;
+}
+
 header {
-    background-color: #309794;
+    /* background-color: #309794; */
     margin: 0 auto;
     text-align: center;
     position: fixed;
@@ -23,9 +134,12 @@ header {
     z-index: 1000; /* Ensures navbar stays above other elements */
 }
 
-.navbar {
-    padding: 10px;
+
+.try {
+    position: relative;
+    top: 20px;
 }
+
 
 .navbar-toggler {
     border-color: #ddd;
@@ -107,6 +221,9 @@ nav img {
     padding: 1rem;
     text-align: center;
     text-align: center;
+    background:var(--bg-w-g);
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
 .support-section h2 {
@@ -153,7 +270,12 @@ nav img {
 .pg2-part1-2-heading p{
     font-size: 1.125rem;
 }
+
+
+
+
 .pg2-part1-2-boxes{
+
     padding: 1% 7% 1% 7%;
     display: grid;
     grid-template-columns: repeat(3,1fr);
