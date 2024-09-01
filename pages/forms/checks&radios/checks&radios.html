@@ -202,19 +202,12 @@
     </div>
     <div class="container">
         <div class="c1">
-            <div class="row g-3 align-items-center">
-                <div class="col-auto">
-                  <label for="inputPassword6" class="col-form-label">Password</label>
-                </div>
-                <div class="col-auto">
-                  <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
-                </div>
-                <div class="col-auto">
-                  <span id="passwordHelpInline" class="form-text">
-                    Must be 8-20 characters long.
-                  </span>
-                </div>
-              </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+                <label class="form-check-label" for="flexCheckIndeterminate">
+                  Indeterminate checkbox
+                </label>
+            </div>
         </div>
  
         
@@ -228,79 +221,418 @@
                 </h1>
             </div>
             <textarea readonly>
-<div class="row g-3 align-items-center">
-  <div class="col-auto">
-    <label for="inputPassword6" class="col-form-label">Password</label>
-  </div>
-  <div class="col-auto">
-    <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
-  </div>
-  <div class="col-auto">
-    <span id="passwordHelpInline" class="form-text" style="color: black;">
-      Must be 8-20 characters long.
-    </span>
-  </div>
+<div class="form-check">
+    <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+    <label class="form-check-label" for="flexCheckIndeterminate">
+        Indeterminate checkbox
+    </label>
+</div>
+             </textarea>
+        </div>
+    </div>
+    <div class="container title">
+        <h2>Disabled</h2>
+        <p>Add the <span>disabled</span> attribute and the associated <span>&lt;label&gt;</span>s are automatically styled to match with a lighter color to help indicate the input’s state.</p>
+    </div>
+    <div class="container">
+        <div class=" c1" >
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDisabled" disabled>
+                <label class="form-check-label" for="flexCheckDisabled">
+                  Disabled checkbox
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckCheckedDisabled" checked disabled>
+                <label class="form-check-label" for="flexCheckCheckedDisabled">
+                  Disabled checked checkbox
+                </label>
+            </div>
+        </div>
+        
+        <!-- Code Display Section -->
+        <div class="code-container">
+            <div class="code-header">
+                <h1>HTML</h1>
+                <h1>
+                    <i class="fa-solid fa-bolt copy"></i>
+                    <i class="fa-regular fa-copy copy" ></i>
+                </h1>
+            </div>
+            <textarea readonly>
+<div class="form-check">
+    <input class="form-check-input" type="checkbox" value="" id="flexCheckDisabled" disabled>
+    <label class="form-check-label" for="flexCheckDisabled">
+        Disabled checkbox
+    </label>
+    </div>
+    <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="" id="flexCheckCheckedDisabled" checked disabled>
+    <label class="form-check-label" for="flexCheckCheckedDisabled">
+        Disabled checked checkbox
+    </label>
+</div>
+            </textarea>
+        </div>
+    </div>
+
+
+    <div class="container title">
+        <h2>Radios</h2>
+    </div>
+
+    <div class="container">
+        <div class="c1">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Default radio
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                <label class="form-check-label" for="flexRadioDefault2">
+                  Default checked radio
+                </label>
+            </div>
+        </div>
+    
+ 
+        
+        <!-- Code Display Section -->
+        <div class="code-container">
+            <div class="code-header">
+                <h1>HTML</h1>
+                <h1>
+                    <i class="fa-solid fa-bolt copy"></i>
+                    <i class="fa-regular fa-copy copy" ></i>
+                </h1>
+            </div>
+            <textarea readonly>
+<div class="form-check">
+    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+    <label class="form-check-label" for="flexRadioDefault1">
+        Default radio
+    </label>
+    </div>
+    <div class="form-check">
+    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+    <label class="form-check-label" for="flexRadioDefault2">
+        Default checked radio
+    </label>
+</div>
+             </textarea>
+        </div>
+    </div>
+    <div class="container title">
+        <h2>Disabled</h2>
+       <p>Add the <span>disabled</span> attribute and the associated <span>&lt;label&gt;</span>s are automatically styled to match with a lighter color to help indicate the input’s state.</p>
+    </div>
+    <div class="container">
+        <div class="c1">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDisabled" id="flexRadioDisabled" disabled>
+                <label class="form-check-label" for="flexRadioDisabled">
+                  Disabled radio
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDisabled" id="flexRadioCheckedDisabled" checked disabled>
+                <label class="form-check-label" for="flexRadioCheckedDisabled">
+                  Disabled checked radio
+                </label>
+            </div>
+        </div>
+    
+ 
+        
+        <!-- Code Display Section -->
+        <div class="code-container">
+            <div class="code-header">
+                <h1>HTML</h1>
+                <h1>
+                    <i class="fa-solid fa-bolt copy"></i>
+                    <i class="fa-regular fa-copy copy" ></i>
+                </h1>
+            </div>
+            <textarea readonly>
+<div class="form-check">
+    <input class="form-check-input" type="radio" name="flexRadioDisabled" id="flexRadioDisabled" disabled>
+    <label class="form-check-label" for="flexRadioDisabled">
+        Disabled radio
+    </label>
+    </div>
+    <div class="form-check">
+    <input class="form-check-input" type="radio" name="flexRadioDisabled" id="flexRadioCheckedDisabled" checked disabled>
+    <label class="form-check-label" for="flexRadioCheckedDisabled">
+        Disabled checked radio
+    </label>
+</div>
+             </textarea>
+        </div>
+    </div>
+    <div class="container title">
+        <h2>Switches</h2>
+        <p>A switch has the markup of a custom checkbox but uses the <span>.form-switch</span> class to render a toggle switch. Switches also support the <span>disabled</span> attribute.</p>
+    </div>
+    <div class="container">
+        <div class="c1">
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
+              </div>
+              <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                <label class="form-check-label" for="flexSwitchCheckChecked">Checked switch checkbox input</label>
+              </div>
+              <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDisabled" disabled>
+                <label class="form-check-label" for="flexSwitchCheckDisabled">Disabled switch checkbox input</label>
+              </div>
+              <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" id="flexSwitchCheckCheckedDisabled" checked disabled>
+                <label class="form-check-label" for="flexSwitchCheckCheckedDisabled">Disabled checked switch checkbox input</label>
+            </div>
+        </div>
+    
+ 
+        
+        <!-- Code Display Section -->
+        <div class="code-container">
+            <div class="code-header">
+                <h1>HTML</h1>
+                <h1>
+                    <i class="fa-solid fa-bolt copy"></i>
+                    <i class="fa-regular fa-copy copy" ></i>
+                </h1>
+            </div>
+            <textarea readonly>
+<div class="form-check form-switch">
+    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+    <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
+    </div>
+    <div class="form-check form-switch">
+    <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+    <label class="form-check-label" for="flexSwitchCheckChecked">Checked switch checkbox input</label>
+    </div>
+    <div class="form-check form-switch">
+    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDisabled" disabled>
+    <label class="form-check-label" for="flexSwitchCheckDisabled">Disabled switch checkbox input</label>
+    </div>
+    <div class="form-check form-switch">
+    <input class="form-check-input" type="checkbox" id="flexSwitchCheckCheckedDisabled" checked disabled>
+    <label class="form-check-label" for="flexSwitchCheckCheckedDisabled">Disabled checked switch checkbox input</label>
+</div>
+             </textarea>
+        </div>
+    </div>
+    <div class="container title">
+        <h2>Default (stacked)</h2>By default, any number of checkboxes and radios that are immediate sibling will be vertically stacked and appropriately spaced with <span>.form-check</span>.
+        <p></p>
+    </div>
+    <div class="container">
+        <div class="c1">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+                  Default checkbox
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" disabled>
+                <label class="form-check-label" for="defaultCheck2">
+                  Disabled checkbox
+                </label>
+            </div>
+        </div>
+    
+ 
+        
+        <!-- Code Display Section -->
+        <div class="code-container">
+            <div class="code-header">
+                <h1>HTML</h1>
+                <h1>
+                    <i class="fa-solid fa-bolt copy"></i>
+                    <i class="fa-regular fa-copy copy" ></i>
+                </h1>
+            </div>
+            <textarea readonly>
+<div class="form-check">
+    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+    <label class="form-check-label" for="defaultCheck1">
+        Default checkbox
+    </label>
+    </div>
+    <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" disabled>
+    <label class="form-check-label" for="defaultCheck2">
+        Disabled checkbox
+    </label>
+</div>
+             </textarea>
+        </div>
+    </div>
+   
+    <div class="container">
+        <div class="c1">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                <label class="form-check-label" for="exampleRadios1">
+                  Default radio
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                <label class="form-check-label" for="exampleRadios2">
+                  Second default radio
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" disabled>
+                <label class="form-check-label" for="exampleRadios3">
+                  Disabled radio
+                </label>
+            </div>
+              
+        </div>
+        <!-- Code Display Section -->
+        <div class="code-container">
+            <div class="code-header">
+                <h1>HTML</h1>
+                <h1>
+                    <i class="fa-solid fa-bolt copy"></i>
+                    <i class="fa-regular fa-copy copy" ></i>
+                </h1>
+            </div>
+            <textarea readonly>
+<div class="form-check">
+    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+    <label class="form-check-label" for="exampleRadios1">
+        Default radio
+    </label>
+    </div>
+    <div class="form-check">
+    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+    <label class="form-check-label" for="exampleRadios2">
+        Second default radio
+    </label>
+    </div>
+    <div class="form-check">
+    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" disabled>
+    <label class="form-check-label" for="exampleRadios3">
+        Disabled radio
+    </label>
+</div>
+                  
+             </textarea>
+        </div>
+    </div>
+
+    <div class="container title">
+        <h2>Inline</h2>
+        <p>Group checkboxes or radios on the same horizontal row by adding <span>.form-check-inline</span> to any <span>.form-check</span>.</p>
+    </div>
+    <div class="container">
+        <div class="c1">
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                <label class="form-check-label" for="inlineCheckbox1">1</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                <label class="form-check-label" for="inlineCheckbox2">2</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" disabled>
+                <label class="form-check-label" for="inlineCheckbox3">3 (disabled)</label>
+            </div>
+        </div>
+    
+ 
+        
+        <!-- Code Display Section -->
+        <div class="code-container">
+            <div class="code-header">
+                <h1>HTML</h1>
+                <h1>
+                    <i class="fa-solid fa-bolt copy"></i>
+                    <i class="fa-regular fa-copy copy" ></i>
+                </h1>
+            </div>
+            <textarea readonly>
+<div class="form-check form-check-inline">
+    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+    <label class="form-check-label" for="inlineCheckbox1">1</label>
+</div>
+<div class="form-check form-check-inline">
+    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+    <label class="form-check-label" for="inlineCheckbox2">2</label>
+</div>
+<div class="form-check form-check-inline">
+    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" disabled>
+    <label class="form-check-label" for="inlineCheckbox3">3 (disabled)</label>
+</div>
+             </textarea>
+        </div>
+    </div>
+    <div class="container">
+        <div class="c1">
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                <label class="form-check-label" for="inlineRadio1">1</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                <label class="form-check-label" for="inlineRadio2">2</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled>
+                <label class="form-check-label" for="inlineRadio3">3 (disabled)</label>
+            </div>
+        </div>
+    
+ 
+        
+        <!-- Code Display Section -->
+        <div class="code-container">
+            <div class="code-header">
+                <h1>HTML</h1>
+                <h1>
+                    <i class="fa-solid fa-bolt copy"></i>
+                    <i class="fa-regular fa-copy copy" ></i>
+                </h1>
+            </div>
+            <textarea readonly>
+<div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+    <label class="form-check-label" for="inlineRadio1">1</label>
+    </div>
+    <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+    <label class="form-check-label" for="inlineRadio2">2</label>
+    </div>
+    <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled>
+    <label class="form-check-label" for="inlineRadio3">3 (disabled)</label>
 </div>
              </textarea>
         </div>
     </div>
 
-
-
     <div class="container title">
-        <h1>Disabled forms</h1>
-        <p>Add the <span>disabled</span> boolean attribute on an input to prevent user interactions and make it appear lighter.</p>
+        <h2>Without labels</h2>
+        <p>Omit the wrapping <span>.form-check </span>for checkboxes and radios that have no label text. Remember to still provide some form of accessible name for assistive technologies (for instance, using <span>aria-label</span>). See the <a href="">forms overview accessibility </a>section for details.</p>
     </div>
-
-    <div class="container">
-        
-        <div class="code-container">
-            <div class="code-header">
-                <h1>HTML</h1>
-                <h1>
-                    <i class="fa-solid fa-bolt copy"></i>
-                    <i class="fa-regular fa-copy copy" ></i>
-                </h1>
-            </div>
-            <textarea readonly>
-<input class="form-control" id="disabledInput" type="text" placeholder="Disabled input here..." disabled>
-
-             </textarea>
-        </div>
-    </div>
-
-
-    <div class="container title">
-        <p>Add the <span>disabled</span> attribute to a <span>fieldset</span> to disable all the controls within. Browsers treat all native form controls (<span> input, select </span> and <span>button</span> elements) inside a <span> fieldset disabled </span> as disabled, preventing both keyboard and mouse interactions on them.</p>
-        <p>However, if your form also includes custom button-like elements such as <a class="btn btn-*">...</a>, these will only be given a style of pointer-events: none, meaning they are still focusable and operable using the keyboard. In this case, you must manually modify these controls by adding tabindex="-1" to prevent them from receiving focus and aria-disabled="disabled" to signal their state to assistive technologies.</p>
-    </div>
-
     <div class="container">
         <div class="c1">
-            <form>
-                <fieldset disabled>
-                  <legend>Disabled fieldset example</legend>
-                  <div class="mb-3">
-                    <label for="disabledTextInput" class="form-label">Disabled input</label>
-                    <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input">
-                  </div>
-                  <div class="mb-3">
-                    <label for="disabledSelect" class="form-label">Disabled select menu</label>
-                    <select id="disabledSelect" class="form-select">
-                      <option>Disabled select</option>
-                    </select>
-                  </div>
-                  <div class="mb-3">
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" id="disabledFieldsetCheck" disabled>
-                      <label class="form-check-label" for="disabledFieldsetCheck">
-                        Can't check this
-                      </label>
-                    </div>
-                  </div>
-                  <button type="submit" class="btn btn-primary">Submit</button>
-                </fieldset>
-              </form>
+            <div>
+                <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
+              </div>
+              
+              <div>
+                <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="" aria-label="...">
+              </div>
         </div>
     
  
@@ -315,58 +647,33 @@
                 </h1>
             </div>
             <textarea readonly>
-<form>
-    <fieldset disabled>
-        <legend>Disabled fieldset example</legend>
-        <div class="mb-3">
-        <label for="disabledTextInput" class="form-label">Disabled input</label>
-        <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input">
-        </div>
-        <div class="mb-3">
-        <label for="disabledSelect" class="form-label">Disabled select menu</label>
-        <select id="disabledSelect" class="form-select">
-            <option>Disabled select</option>
-        </select>
-        </div>
-        <div class="mb-3">
-        <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="disabledFieldsetCheck" disabled>
-            <label class="form-check-label" for="disabledFieldsetCheck">
-            Can't check this
-            </label>
-        </div>
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-    </fieldset>
-    </form>
+<div>
+    <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
+    </div>
+    
+    <div>
+    <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="" aria-label="...">
+</div>
              </textarea>
         </div>
-        
+    </div>
+
+    <div class="container title">
+        <h2>Toggle buttons</h2>
+        <p>Create button-like checkboxes and radio buttons by using <span>.btn</span> styles rather than <span>.form-check-label</span> on the <span>&lt;label&gt;</span> elements. These toggle buttons can further be grouped in a <a href="">button group</a> if needed.</p>
     </div>
     <div class="container title">
-        <h1>Accessibility</h1>
-        <p>Ensure that all form controls have an appropriate accessible name so that their purpose can be conveyed to users of assistive technologies. The simplest way to achieve this is to use a <span>&lt;label&gt;</span> element, or—in the case of buttons—to include sufficiently descriptive text as part of the<span>&lt;button&gt;...&lt;/button&gt;</span> content.</p>
-        <p>For situations where it’s not possible to include a visible <span>&lt;label&gt;</span> or appropriate text content, there are alternative ways of still providing an accessible name, such as:</p>
-        <ul>
-            <li><span>&lt;label&gt;</span> elements hidden using the .visually-hidden class</li>
-            <li>Pointing to an existing element that can act as a label using <span>aria-labelledby</span></li>
-            <li>Providing a <span>title</span> attribute</li>
-            <li>Explicitly setting the accessible name on an element using <span>aria-label</span></li>
-        </ul>
-        <p>If none of these are present, assistive technologies may resort to using the <span> placeholder</span> attribute as a fallback for the accessible name on <span>&lt;input&gt;</span> and <span>&lt;textarea&gt;</span>elements. The examples in this section provide a few suggested, case-specific approaches.</p>
-        <p>While using visually hidden content (<span>.visually-hidden, aria-label</span>, and even <span>placeholder</span> content, which disappears once a form field has content) will benefit assistive technology users, a lack of visible label text may still be problematic for certain users. Some form of visible label is generally the best approach, both for accessibility and usability.</p>
-    </div>
-    <div class="container title">
-        <h1>Sass</h1>
-        <p>Many form variables are set at a general level to be re-used and extended by individual form components. You’ll see these most often as <span>$btn-input-</span> and <span>$input-</span> variables.</p>
-    </div>
-    <div class="container title">
-        <h1>Variables</h1>
-        <p><span>$btn-input-*</span> variables are shared global variables between our <a href="">buttons</a> and our form components. You’ll find these frequently reassigned as values to other component-specific variables.</p>
+        <h3>Checkbox toggle buttons</h3>
     </div>
     <div class="container">
+        <div class="c1">
+            <input type="checkbox"  id="btn-check" autocomplete="off">
+<label class="btn btn-primary" for="btn-check">Single toggle</label>
+        </div>
+    
+ 
         
-            <!-- Code Display Section -->
+        <!-- Code Display Section -->
         <div class="code-container">
             <div class="code-header">
                 <h1>HTML</h1>
@@ -376,32 +683,107 @@
                 </h1>
             </div>
             <textarea readonly>
-  $input-btn-padding-y:         .375rem;
-  $input-btn-padding-x:         .75rem;
-  $input-btn-font-family:       null;
-  $input-btn-font-size:         $font-size-base;
-  $input-btn-line-height:       $line-height-base;
-  
-  $input-btn-focus-width:         .25rem;
-  $input-btn-focus-color-opacity: .25;
-  $input-btn-focus-color:         rgba($component-active-bg, $input-btn-focus-color-opacity);
-  $input-btn-focus-blur:          0;
-  $input-btn-focus-box-shadow:    0 0 $input-btn-focus-blur $input-btn-focus-width $input-btn-focus-color;
-  
-  $input-btn-padding-y-sm:      .25rem;
-  $input-btn-padding-x-sm:      .5rem;
-  $input-btn-font-size-sm:      $font-size-sm;
-  
-  $input-btn-padding-y-lg:      .5rem;
-  $input-btn-padding-x-lg:      1rem;
-  $input-btn-font-size-lg:      $font-size-lg;
-  
-  $input-btn-border-width:      $border-width;
-            </textarea>
+<input type="checkbox" class="btn-check" id="btn-check" autocomplete="off">
+<label class="btn btn-primary" for="btn-check">Single toggle</label>
+             </textarea>
         </div>
-        
     </div>
+    <div class="container">
+        <div class="c1">
+            <input type="checkbox" class="" id="btn-check-2" checked autocomplete="off">
+            <label class="btn btn-primary" for="btn-check-2">Checked</label>
+        </div>
     
+ 
+        
+        <!-- Code Display Section -->
+        <div class="code-container">
+            <div class="code-header">
+                <h1>HTML</h1>
+                <h1>
+                    <i class="fa-solid fa-bolt copy"></i>
+                    <i class="fa-regular fa-copy copy" ></i>
+                </h1>
+            </div>
+            <textarea readonly>
+<input type="checkbox" class="btn-check" id="btn-check-2" checked autocomplete="off">
+<label class="btn btn-primary" for="btn-check-2">Checked</label>
+             </textarea>
+        </div>
+    </div>
+    <div class="container">
+        <div class="c1">
+            <input type="checkbox" class="" id="btn-check-3" autocomplete="off" disabled>
+<label class="btn btn-primary" for="btn-check-3">Disabled</label>
+        </div>
+    
+ 
+        
+        <!-- Code Display Section -->
+        <div class="code-container">
+            <div class="code-header">
+                <h1>HTML</h1>
+                <h1>
+                    <i class="fa-solid fa-bolt copy"></i>
+                    <i class="fa-regular fa-copy copy" ></i>
+                </h1>
+            </div>
+            <textarea readonly>
+<input type="checkbox" class="btn-check" id="btn-check-3" autocomplete="off" disabled>
+<label class="btn btn-primary" for="btn-check-3">Disabled</label>
+             </textarea>
+        </div>
+    </div>
+    <div class="container title">
+        <h2>Radio toggle buttons</h2>
+    </div>
+    <div class="container">
+        <div class="c1">
+<input type="radio" class="check" name="options" id="option1" autocomplete="off" checked>
+<label class="btn wsecondary" for="option1">Checked</label>
+
+<input type="radio" class="check" name="options" id="option2" autocomplete="off">
+<label class="btn wsecondary" for="option2">Radio</label>
+
+<input type="radio" class="check" name="options" id="option3" autocomplete="off" disabled>
+<label class="btn wsecondary" for="option3">Disabled</label>
+
+<input type="radio" class="check" name="options" id="option4" autocomplete="off">
+<label class="btn wsecondary" for="option4">Radio</label>
+        </div>
+    
+ 
+        
+        <!-- Code Display Section -->
+        <div class="code-container">
+            <div class="code-header">
+                <h1>HTML</h1>
+                <h1>
+                    <i class="fa-solid fa-bolt copy"></i>
+                    <i class="fa-regular fa-copy copy" ></i>
+                </h1>
+            </div>
+            <textarea readonly>
+                <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off" checked>
+                <label class="btn btn-secondary" for="option1">Checked</label>
+                
+                <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
+                <label class="btn btn-secondary" for="option2">Radio</label>
+                
+                <input type="radio" class="btn-check" name="options" id="option3" autocomplete="off" disabled>
+                <label class="btn btn-secondary" for="option3">Disabled</label>
+                
+                <input type="radio" class="btn-check" name="options" id="option4" autocomplete="off">
+                <label class="btn btn-secondary" for="option4">Radio</label>
+             </textarea>
+        </div>
+    </div>
+         
+        
+
+
+<!-- below end div -->
+    </div> 
 </div>
     
 <!-- Bootstrap JS -->
