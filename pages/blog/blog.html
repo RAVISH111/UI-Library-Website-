@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Pixel</title>
+    <link rel="stylesheet" href="blog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv2cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/@chakra-ui/core@1.6.9/dist/chakra-ui.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="../pages.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="../../assets/logoNew.png" alt="Logo" width="50">
+                </a>
+                <!-- Navbar Toggler Button -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active an" aria-current="page" href="../../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../blog/blog.html">Blogs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../documentation/intro.html">Documentation</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Components
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="../components/buttons.html">Button</a></li>
+                                <li><a class="dropdown-item" href="../utilities/text.html">Text</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="blogPage1">
+        <div id="blogOuterMostContainer">
+            <div id="blogHeadder">
+                <p class="blogHeadderP1">PIXEL UI 1.3.3 <sup class="superTag"><sup>v</sup></sup></p>
+                <p class="blogHeadderP2">created - @masai | construct week project</p>
+            </div>
+
+            <div id="blogContent">
+                <div id="blogLeft">
+                    <div class="blogLeftContainerOne">
+                        <p style="font-size: 1.4em;color: aquamarine;">PIXEL UI BLOG</p>
+                    </div>
+
+                    <div class="blogLeftContentTwo">
+                        <div class="blogLeftSubContent">
+                            <p>Pixel UI </p>
+                        </div>
+                        <div class="blogLeftSubContent">
+                            <p>Pixel UI versions </p>
+                        </div>
+                        <div class="blogLeftSubContent">
+                            <p>Highlights </p>
+                        </div>
+                        <div class="blogLeftSubContent">
+                            <p>Color Models </p>
+                        </div>
+                        <div class="blogLeftSubContent">
+                            <p>Miscellaneous</p>
+                        </div>
+                        <div class="blogLeftSubContent">
+                            <p>Docs</p>
+                        </div>
+                        <div class="blogLeftSubContent">
+                            <p>Components</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="blogRight">
+
+                    <div class="blogRightContentOne bRightChild">
+                        <p>PIXEL UI v1.3.3 is here with bug fixes, documentation improvements, and more follow-up enhancements for color modes. Keep reading for the highlights!</p>
+                    </div>
+                    <div class="blogRightContentTwo bRightChild">
+                        <p class="blogRightContentHead">Highlights</p>
+                        <ul>
+                            <li><p>Fixed a breaking change introduced with color modes where it was required to manually import <span style="color: aqua;">variables-dark.scss</span> when building Bootstrap with Sass. Now, <span style="color: aqua;">_variables.scss</span> will automatically import _variables-dark.scss. If you were already importing <span style="color: aqua;">_variables-dark.scss</span> manually, you should keep doing it as it won't break anything and will be the way to go in v6.</p></li>
+                            <li><p>Fixed a regression in the selector engine that wasn't able to handle multiple IDs anymore.</p></li>
+                        </ul>
+                    </div>
+                    <div class="blogRightContentTwo bRightChild">
+                        <p class="blogRightContentHead">Color Models</p>
+                        <ul>
+                            <li><p>Badges now use the <span style="color: aqua;">.text-bg-*</span> text utilities to be certain that the text is always readable (especially when the customized colors are different in light and dark modes).</p></li>
+                            <li><p>Fixed our <span style="color: aqua;">color-modes.js</span> script to handle the case where the OS is set to light mode and the auto color mode is used on the website. If you copied the script from our docs, you should apply this change to your own script.</p></li>
+                            <li><p>Fixed color schemes description in the color modes documentation to show that color-scheme() only accept <span style="color: aqua;">light</span> and <span style="color: aqua;">dark</span> values as parameters.</p></li>
+                    </div>
+                    <div class="blogRightContentTwo bRightChild">
+                        <p class="blogRightContentHead">Miscellaneous</p>
+                        <ul>
+                            <li><p>Allowed &lt;dl&gt; , &lt;dt&gt; and &lt;dd&gt; in the sanitizer</p></li>
+                            <li><p>Dropped evenly items distribution for modal and offcanvas headers.</p></li>
+                            <li><p>Fixed the accordion CSS selectors to avoid inheritance issues when nesting accordions.</p></li>
+                            <li><p>Fixed the focus ring on focused checked buttons.</p></li>
+                            <li><p>Fixed the product example mobile navbar toggler.</p></li>
+                            <li><p>Changed the RTL processing of carousel control icons.</p></li>
+                    </div>
+                    <div class="blogRightContentTwo bRightChild">
+                        <p class="blogRightContentHead">Docs</p>
+                        <ul>
+                            <li><p>Dropped unnecessary right margin for example code blocks.</p></li>
+                            <li><p>Fixed emphasis text utilities usage in <span style="color: aqua;">background utilities examples</span> section.</p></li>
+                            <li><p>Added an technical explanation on how to render an accordion expanded by default.</p></li>
+                            <li><p>Changed Vite config path import in Vite guide.</p></li>
+                            <li><p>Enhanced the card image description of the <span style="color: aqua;">.card-img-*</span> classes.</p></li>
+                            <li><p>Mentioned <span style="color: aqua;">shift-color()</span> function in the Sass customization page among <span style="color: aqua;">tint-color()</span> and <span style="color: aqua;">shade-color().</span></p></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+            
+        </div>
+    </section>
+    <!-- varad footer starts here -->
+
+    <main id="footerMain">
+        <section class="v1" >
+            <div class="container">
+                <div class="card" style="background-color: rgba(32, 31, 31, 0.661);">
+                    <div class="card1" >
+                        <h5 style="color: gray;">PREMIUM COMPONENTS <span class="span1">New</span></h5>
+                        <h1 class="card1-title"><span class="span2">Build faster </span> with Pixel UI Pro 💎</h1>
+                        <p class="card1-subtitle">Beautiful and responsive React components to build your application or marketing pages quicker.</p>
+                        <button class="btn">Learn more <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+                <div class="image-section">
+                    <img src="https://v2.chakra-ui.com/_next/image?url=%2Fchakra-ui-ad.png&w=1920&q=75" alt="Chakra UI Ad">
+                </div>
+            </div>
+        </section>
+        <section class="v2">
+            <div class="container">
+                <div class="card">
+                    <div class="card1">
+                        <i class="fa-solid fa-microphone" style="color: #63E6BE;"></i>
+                        <h1 class="card1-title">Invite us to speak at your next event</h1>
+                        <p class="card1-subtitle">Want a Chakra UI core team member to speak at your next event? Invite us to create a memorable and engaging experience for your attendees.</p>
+                        <button class="btn">Invite us to speak <i class="fa-solid fa-arrow-right" style="padding-left: 0.5rem;"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="v3">
+            <div class="top-banner">
+                <div class="banner-text">
+                    <i class="fa-brands fa-discord" style="color: #ffffff; font-size: 2rem;"></i>
+                    <div>
+                        <h2>Connect with the community</h2>
+                        <p>Feel free to ask questions, report issues, and meet new people.</p>
+                    </div>
+                </div>
+                <div>
+                    <button class="join-button">Join the #Chakra Discord!</button>
+                </div>
+            </div>
+        </section>
+        
+
+        <footer>
+            <div class="footer-content">
+                <p>Proudly made in <span class="flag">🇳🇬</span> by Segun Adebayo</p>
+                <div class="social-icons">
+                    <a href="https://github.com" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://twitter.com" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://instagram.com" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="mailto:someone@example.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="https://youtube.com" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+                <button class="deploy-button">Deployed by ▲ Vercel</button>
+            </div>
+        </footer>
+    </main>
+     <!-- Bootstrap JS -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+     <script>
+         var accordions = document.getElementsByClassName("accordion");
+ 
+         for (var i = 0; i < accordions.length; i++) {
+             accordions[i].addEventListener("click", function() {
+                 this.classList.toggle("active");
+                 var panel = this.nextElementSibling;
+                 if (panel.style.display === "block") {
+                     panel.style.display = "none";
+                 } else {
+                     panel.style.display = "block";
+                 }
+             });
+         }
+     </script>
+</body>
+
+</html>
