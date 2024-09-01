@@ -8,31 +8,32 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
-<body>
+<body >
 <!-- ---------------------------navbar----------------------------     -->
 <header>
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="./assets/logo.png" alt="Logo" width="50">
+            <a class="navbar-brand logo" href="#">
+                <img src="./assets/logoNew.png" alt="Logo" width="50">
             </a>
             <!-- Navbar Toggler Button -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 try">
                     <li class="nav-item">
-                        <a class="nav-link active an" aria-current="page" href="./index.html">Home</a>
+                        <a id="tt" class="nav-link"  aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item "  >
+                        <a id="tt" class="nav-link" href="#">Blogs</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./pages/documentation/intro.html">Blogs</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Documentation</a>
+                        <a id="tt" class="nav-link" href="#">Documentation</a>
+
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a id="tt" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Components
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -40,6 +41,16 @@
                             <li><a class="dropdown-item" href="#">Text</a></li>
                         </ul>
                     </li>
+                   <li>
+                    <!-- ----------------light/dark------------------ -->
+                    <div class="toggle-btn">
+                        <input type="checkbox" id="checkbox">
+                        <label for="checkbox" class="toggle-label">
+                            <span class="toggle-ball"></span>
+                        </label>
+                    </div>
+<!-- -------------------------------------------------------------------------------------------------------- -->
+                   </li>
                 </ul>
                 <form class="d-flex">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -48,15 +59,17 @@
         </div>
     </nav>
 </header>
-
+<!-- ========================================================================================= -->
+<section id="main2">
 <section class="vm1">
-    <div class="container">
-        <div class="card">
+    <div class="container " id="qqq">
+        <div class="card" id="qqq">
             <div class="card1">
                 <h1 class="card1-title" id="qq" >Create accessible React apps<span class="span2"> with  speed</span></h1>
                 <p class="card1-subtitle">Pixel UI is a simple, modular and accessible component library that gives you the building blocks you need to build your React applications.                        </p>
-                <button class="btn" style="background-color: #2F9796; color: white;">Get Started <i class="fa-solid fa-arrow-right" style="color: white;"></i></button>
+                <button class="btn" style="background-color: #2f9796; color: white;">Get Started <i class="fa-solid fa-arrow-right" style="color: white;"></i></button>
                 <button class="btn"><i class="fa-brands fa-github" style="padding-right: 5px;"></i> GitHub</button>
+
             </div>
         </div>
     </div>
@@ -80,7 +93,9 @@
                         
     </div>
 </section>
+
 <!-- ----------------------page2 part1----------------------------------- -->
+
     <section id="pg2-part1">
         <div class="pg2-part1-1">
             <div class="pg2-part1-1-lt">
@@ -90,14 +105,14 @@
                 
             </div>
         </div>
-        <div class="pg2-part1-2">
+        <div class="pg2-part1-2" id="grey">
             <div class="pg2-part1-2-heading">
                 <h1>An experience you'd expect</h1>
                 <h1>from a design system</h1>
                 <p>Opinionated and designed for daily use.</p>
             </div>
             <div class="pg2-part1-2-boxes">
-                <div class="pg2-part1-2-boxes-item">
+                <div class="pg2-part1-2-boxes-item" id="pp" >
                     <span><i class="fa-solid fa-universal-access fa-2xl" style="color: #309794;"></i></span>
                     <p>Accessible</p>
                     <p>Accessible
@@ -105,7 +120,7 @@
                         ARIA standards for all
                         components.</p>
                 </div>
-                <div class="pg2-part1-2-boxes-item">
+                <div class="pg2-part1-2-boxes-item" id="pp">
                     <span><i class="fa-solid fa-palette fa-2xl" style="color: #309794;"></i></span>
                     <p>Themeable</p>
                     <p>Customize any part of our
@@ -113,7 +128,7 @@
                         design needs.
                     </p>
                 </div>
-                <div class="pg2-part1-2-boxes-item">
+                <div class="pg2-part1-2-boxes-item" id="pp">
                     <span><i class="fa-solid fa-universal-access fa-2xl" style="color: #309794;"></i></span>
                     <p>Composable</p>
                     <p>Designed with composition in
@@ -121,7 +136,7 @@
                         components with ease.
                     </p>
                 </div>
-                <div class="pg2-part1-2-boxes-item">
+                <div class="pg2-part1-2-boxes-item" id="pp">
                     <span><i class="fa-solid fa-circle-half-stroke fa-2xl" style="color: #309794;"></i></span>
                     <p>Light and Dark Ul</p>
                     <p>Optimized for multiple color
@@ -129,7 +144,7 @@
                         choice.
                     </p>
                 </div>
-                <div class="pg2-part1-2-boxes-item">
+                <div class="pg2-part1-2-boxes-item" id="pp">
                     <span><i class="fa-solid fa-window-maximize fa-2xl" style="color: #309794;"></i></span>
                     <p>Developer Experience</p>
                     <p>Guaranteed to boost your
@@ -137,7 +152,7 @@
                         your app or website.
                     </p>
                 </div>
-                <div class="pg2-part1-2-boxes-item">
+                <div class="pg2-part1-2-boxes-item" id="pp">
                     <span><i class="fa-brands fa-discord fa-2xl" style="color:#309794;"></i></span>
                     <p>Active Community</p>
                     <p>We're a team of active
@@ -157,17 +172,17 @@
             <button>See showcase <span> <i class="fa-solid fa-arrow-right"></i></span></button>
         </div>
 
-        <div id="pg2-part2div2">
-            <div class="pg2-part2div2-items" >
+        <div id="pg2-part2div2" >
+            <div class="pg2-part2div2-items" id="aa">
                 <a href="https://v2.chakra-ui.com/" target="_blank">
                     <img src="./assets/img 1.png" alt="Example Image1" >
                 </a>
                 <div class="pg2-part2div2-items-name">
-                    <span>Chakra UI Pro</span>
+                    <span>Pixel UI Pro</span>
                 </div>
                 
             </div>
-            <div class="pg2-part2div2-items" >
+            <div class="pg2-part2div2-items"  id="aa" >
                 <a href="https://www.udacity.com/" target="_blank">
                     <img src="./assets/img 2.png" alt="Example Image2" >
                 </a>
@@ -175,7 +190,7 @@
                     <span>Udacity</span>
                 </div>
             </div>
-            <div class="pg2-part2div2-items" >
+            <div class="pg2-part2div2-items" id="aa">
                 <a href="https://ethereum.org/en/" target="_blank">
                     <img src="./assets/img 3.png" alt="Example Image" >
                 </a>
@@ -183,7 +198,7 @@
                     <span>Ethereum</span>
                 </div>
             </div>
-            <div class="pg2-part2div2-items" >
+            <div class="pg2-part2div2-items" id="aa" >
                 <a href="https://config.figma.com/" target="_blank">
                     <img src="./assets/img 4.png" alt="Example Image" >
                 </a>
@@ -191,7 +206,7 @@
                     <span>Figma Conf '23</span>
                 </div>
             </div>
-            <div class="pg2-part2div2-items" >
+            <div class="pg2-part2div2-items" id="aa">
                 <a href="https://www.planet.com/" target="_blank">
                     <img src="./assets/img 5.png" alt="Example Image" >
                 </a>
@@ -199,7 +214,7 @@
                     <span>Planet.com</span>
                 </div>
             </div>
-            <div class="pg2-part2div2-items" >
+            <div class="pg2-part2div2-items" id="aa">
                 <a href="https://soliditylang.org/" target="_blank">
                     <img src="./assets/img 6.png" alt="Example Image" >
                 </a>
@@ -207,7 +222,7 @@
                     <span>Solidity</span>
                 </div>
             </div>
-            <div class="pg2-part2div2-items" >
+            <div class="pg2-part2div2-items" id="aa">
                 <a href="https://www.yubo.live/" target="_blank">
                     <img src="./assets/img 7.png" alt="Example Image" >
                 </a>
@@ -215,7 +230,7 @@
                     <span>yubo</span>
                 </div>
             </div>
-            <div class="pg2-part2div2-items" >
+            <div class="pg2-part2div2-items" id="aa">
                 <a href="https://typebot.io/" target="_blank">
                     <img src="./assets/img 8.png" alt="Example Image" >
                 </a>
@@ -269,12 +284,12 @@
             <h1>Loved by product people like you</h1>
         </div>
         <div class="pg3-p2-box">
-            <div class="pg3-p2-col">
+            <div class="pg3-p2-col" >
                 <div class="pg3-p2-item" id="pg3-p2-item1">
-                    <div class="pg3-part2-logo"> 
+                    <div class="pg3-part2-logo" > 
                         <img src="https://v2.chakra-ui.com/_next/image?url=%2Favatars%2F%40ryanflorence.jpg&w=3840&q=75" alt="">
                     </div>   
-                    <div class="pg3-notes">
+                    <div class="pg3-notes" >
                         <p>Echobind @echobind</p>
                         <p>Pixel Ul has become part of our
                         default stack for React apps, and we're
@@ -285,7 +300,7 @@
                         great out of the box.</p> 
                     </div>   
                 </div>
-                <div class="pg3-p2-item" id="pg3-p2-item2">
+                <div class="pg3-p2-item" id="pg3-p2-item1">
                     <div class="pg3-part2-logo"> 
                         <img src="https://v2.chakra-ui.com/_next/image?url=%2Favatars%2F%40echobind.jpg&w=3840&q=75" alt="">
                     </div>  
@@ -303,7 +318,7 @@
                         </p> 
                     </div>   
                 </div>
-                <div class="pg3-p2-item" id="pg3-p2-item3">
+                <div class="pg3-p2-item" id="pg3-p2-item1">
                     <div class="pg3-part2-logo"> 
                         <img src="https://v2.chakra-ui.com/_next/image?url=%2Favatars%2F%40ryanflorence.jpg&w=3840&q=75" alt="">
                     </div>  
@@ -318,7 +333,7 @@
                 </div>
             </div>
             <div class="pg3-p2-col">
-                <div class="pg3-p2-item" id="pg3-p2-item4">
+                <div class="pg3-p2-item" id="pg3-p2-item1">
                     <div class="pg3-part2-logo"> 
                         <img src="https://v2.chakra-ui.com/_next/image?url=%2Favatars%2F%40echobind.jpg&w=3840&q=75" alt="">
                     </div>  
@@ -333,7 +348,7 @@
                         great out of the box.</p> 
                     </div>   
                 </div>
-                <div class="pg3-p2-item" id="pg3-p2-item5">
+                <div class="pg3-p2-item" id="pg3-p2-item1">
                     <div class="pg3-part2-logo"> 
                         <img src="https://v2.chakra-ui.com/_next/image?url=%2Favatars%2F%40ryanflorence.jpg&w=3840&q=75" alt="">
                     </div> 
@@ -354,7 +369,7 @@
                         </p>
                     </div>   
                 </div>
-                <div class="pg3-p2-item" id="pg3-p2-item6">
+                <div class="pg3-p2-item" id="pg3-p2-item1">
                     <div class="pg3-part2-logo"> 
                         <img src="https://v2.chakra-ui.com/_next/image?url=%2Favatars%2F%40nicktrabue.jpg&w=3840&q=75" alt="">
                     </div>  
@@ -371,7 +386,7 @@
                 </div>
             </div>
             <div class="pg3-p2-col">
-                <div class="pg3-p2-item" id="pg3-p2-item7">
+                <div class="pg3-p2-item" id="pg3-p2-item1">
                     <div class="pg3-part2-logo"> 
                         <img src="https://v2.chakra-ui.com/_next/image?url=%2Favatars%2F%40nicktrabue.jpg&w=3840&q=75" alt="">
                     </div>  
@@ -386,7 +401,7 @@
                         <p>Thank you for your hard work!</p>
                     </div>    
                 </div>
-                <div class="pg3-p2-item" id="pg3-p2-item8">
+                <div class="pg3-p2-item" id="pg3-p2-item1">
                     <div class="pg3-part2-logo">
                         <img src="https://v2.chakra-ui.com/_next/image?url=%2Favatars%2F%40aayush.jpg&w=3840&q=75" alt="">
                     </div>   
@@ -399,7 +414,7 @@
                         <p>Thank you @thesegunadebayo!</p>
                     </div>   
                 </div>
-                <div class="pg3-p2-item" id="pg3-p2-item9">
+                <div class="pg3-p2-item" id="pg3-p2-item1">
                     <div class="pg3-part2-logo">
                         <img src="https://v2.chakra-ui.com/_next/image?url=%2Favatars%2F%40ssijak.jpg&w=3840&q=75" alt=" tty">
                     </div>   
@@ -529,7 +544,7 @@
                 <div class="card">
                     <div class="card1">
                         <h5>PREMIUM COMPONENTS <span class="span1">New</span></h5>
-                        <h1 class="card1-title"><span class="span2">Build faster </span> with Chakra UI Pro 💎</h1>
+                        <h1 class="card1-title" id="clr"><span class="span2">Build faster </span> with Pixel UI Pro 💎</h1>
                         <p class="card1-subtitle">Beautiful and responsive React components to build your application or marketing pages quicker.</p>
                         <button class="btn">Learn more <i class="fa-solid fa-arrow-right"></i></button>
                     </div>
@@ -566,11 +581,11 @@
                 </div>
             </div>
         </section>
-        
+       
 
         <footer>
-            <div class="footer-content">
-                <p>Proudly made in <span class="flag">🇳🇬</span> by Segun Adebayo</p>
+            <div class="footer-content" >
+                <p id="oo">Proudly made in <span class="flag">🇳🇬</span> by Segun Adebayo</p>
                 <div class="social-icons">
                     <a href="https://github.com" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
                     <a href="https://twitter.com" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
@@ -581,13 +596,24 @@
                 <button class="deploy-button">Deployed by ▲ Vercel</button>
             </div>
         </footer>
-        
-
-
+    </section> 
 
 
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+    <!-- -----------------------------------------js for light-dark mode-------------------------------------------------- -->
+    <script>
+        const toggle_btn = document.querySelector('#checkbox')
+        toggle_btn.addEventListener('change', () => {
+            if(toggle_btn.checked){
+            document.body.classList.add('dark-mode')
+        }else{
+            document.body.classList.remove('dark-mode')
+
+        }
+        })
+    </script>
 </body>
 
 </html>
