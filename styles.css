@@ -40,7 +40,6 @@ body {
 
 .toggle-btn{
     /* background: red; */
-    margin-left: 40rem;
     height: 5rem;
     display: flex;
     align-items: center;
@@ -89,6 +88,7 @@ body {
 }
 
 #main2{
+    margin-top: 0.8rem;
     background: var(--bg-part);
     color:var(--bg-primary);
 }
@@ -206,6 +206,7 @@ nav img {
 .vm1 .btn {
     padding: 0.7rem 2rem;
     color: black;
+    margin: 0.2rem;
     border-radius: 8px;
     cursor: pointer;
     font-size: 1rem;
@@ -300,6 +301,13 @@ nav img {
     opacity: 0.7;
 }
 @media (max-width:768px){
+    .pg2-part1-2-heading h1{
+        font-size: 2rem;
+    }
+    .pg2-part1-2-heading{
+        padding: 1% 2% 1% 2%;
+
+    }
     .pg2-part1-2-boxes{
         padding: 1% 2% 1% 2%;
         grid-template-columns: repeat(1,1fr);
@@ -345,7 +353,7 @@ nav img {
         border: none;
         border-radius: 5px;
         margin-top: 2rem;
-        padding:1.5rem 2rem 1.5rem 2rem;
+        padding:1rem 2rem 1rem 2rem;
         background-color: #309794;;
 
     } 
@@ -387,6 +395,11 @@ nav img {
    
 }
 @media (max-width:768px){
+    .pg2-part2div h1{
+        font-size: 2.5rem;
+        margin-top: 2rem;
+        padding: 0;
+    }
     #pg2-part2div2{
         grid-template-columns: repeat(1,1fr)
     }
@@ -504,13 +517,20 @@ body{
 /* -------------------------- Media Query------------------------- */
 
 @media (max-width:768px){
+
+    .page3-part2{
+        padding: 2% 2% 2% 2%;
+    }
+    .pg3-p1-top h1{
+        margin-top: 2rem;
+        font-size: 3rem;
+    }
     .pg3-p1-bottom{
         padding: 1% 1% 0 1%;
         grid-template-columns: repeat(1,1fr);
         gap:3rem
     }
     .pg3-p2-box{
- 
         grid-template-columns: repeat(1,1fr);
         column-gap: 10px;
     }
@@ -625,7 +645,7 @@ body{
 
 @media screen and (max-width: 650px) {
     #pg4container{
-        width: 90%;
+        width: 100%;
         /* background-color: black; */
     }
 

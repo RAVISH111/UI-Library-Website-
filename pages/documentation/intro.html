@@ -10,8 +10,13 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- <link rel="stylesheet" href="../pages.css"> -->
-    <link rel="stylesheet" href="intro.css">
-
+    <link rel="stylesheet" href="../pages.css">
+    <link rel="stylesheet" href="bstyles.css">
+    <style>
+       .container{
+        border: none;
+       } 
+    </style>
 </head>
 
 <body>
@@ -133,281 +138,168 @@
 
         <!-- Main Content -->
         <div class="main-content">
+    <div class="container">
+        <h2>Introduction</h2>
+        <p>Get started with Bootstrap, the world’s most popular framework for building responsive, mobile-first sites, with jsDelivr and a template starter page. </p>
+        <div class="button-group">
+            <button class="btn">
+                <i class="fa-brands fa-github"></i> Source
+            </button>
+            <button class="btn">
+                <i class="fa-brands fa-github"></i> Theme source
+            </button>
+            <button class="btn">
+                <i class="fa-brands fa-npm" style="color: #dc1849;"></i> @chakra-ui/button
+            </button>
+        </div>
+    </div>
+    <div class="container">
+        <h2>Quick start </h2>
+        <p>Looking to quickly add Bootstrap to your project? Use jsDelivr, a free open source CDN. Using a package manager or need to download the source files?<a href=""> Head to the downloads page</a>.</p>
 
-            <div class="container">
-                <h2 class="biggerText">Get started with PixelUi</h2>
-                <p style="font-size: large;">Pixel Ui is a powerful,feature-packed frontend toolkit.Build anything from
-                    prototype to production in minutes</p>
-                <div class="code-example">
-                    <!-- <div class="code-header">
-                        <span>EDITABLE EXAMPLE</span>
-                        <button class="copy-btn">COPY</button>
-                    </div> -->
-                    <pre><code>getting started with PixelUI</code></pre>
-                </div>
+    </div>
+    
+    <div class="container">
+        <h2>CSS        </h2>
+        <p>Copy-paste the stylesheet &lt;link&gt; into your &lt;head&gt; before all other stylesheets to load our CSS.</p>
         
-                <!-- <div class="description">
-                    <p><strong>Button:</strong> The button component with support for custom icons, spinners, etc.</p>
-                    <p><strong>ButtonGroup:</strong> Used to group buttons whose actions are related, with an option to flush them together.</p>
-                </div> -->
+        <div class="code-example">
+            <div class="code-header">
+                <span>EDITABLE EXAMPLE</span>
+                <button class="copy-btn">COPY</button>
             </div>
+            <pre><code>&lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"&gt;      </code></pre>
+        </div>
+    </div>
+    <div class="container">
+        <h2>JS</h2>
+        <p>Many of our components require the use of JavaScript to function. Specifically, they require our own JavaScript plugins and Popper. Place one of the following &lt;script&gt; tags near the end of your pages, right before the closing &lt;/body&gt; tag, to enable them.</p>
         
-            <!-- ----------------------------------------------------------------------------- -->
-        
-            <div class="container">
-                <h2>Quick start</h2>
-                <p>Get started by including Pixel Ui's production-ready CSS and JavaScrapt via CDN without the need for any
-                    build steps.See it in practice with this <a href="">Pixel Ui CodePen demo.</a></p>
+    </div>
+    <div class="container">
+        <h2>Bundle</h2>
+        <p>Include every Bootstrap JavaScript plugin and dependency with one of our two bundles. Both bootstrap.bundle.js and bootstrap.bundle.min.js include Popper for our tooltips and popovers. For more information about what’s included in Bootstrap, please see our contents section.</p>
+
+    
+        <div class="code-example">
+            <div class="code-header">
+                <span>EDITABLE EXAMPLE</span>
+                <button class="copy-btn">COPY</button>
             </div>
-        
-        
-            <div class="container">
-                <ol>
-                    <li>
-                        <p>Create a new <span style="color: crimson;">index,html</span> file in your project root. include the
-                            <span style="color: crimson;">&lt;meta name="viewport"&gt;</span> tag as well for <a
-                                href="proper resopnsive behaviour"></a> in mobile devices.</p>
-                    </li>
-                    <div class="code-example" style="margin-top: 20px;">
-        
-                        <pre><code>
-            &lt;!doctype html&gt;
-            &lt;html lang="en"&gt;
-                &lt;head&gt;
-                    &lt;meta charset="utf-8"&gt;
-                    &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
-                    &lt;title&gt;PixelUi demo&lt;/title&gt;
-                &lt;/head&gt;
-                &lt;body&gt;
-                    &lt;h1&gt;Hellow world&lt;/h1&gt;
-                &lt;/body&gt;
-            &lt;/html&gt;
-                    </code></pre>
-        
-                    </div>
-        
-                    <!--  -->
-        
-                    <li style="margin-top: 20px;">
-                        <p>Include Pixel's CSS and JS.place the <span style="color: crimson;">&lt;link&gt;</span> tag in <span
-                                style="color: crimson;">&lt;head&gt;</span> for our CSS,andn the <span
-                                style="color: crimson;">&lt;script&gt;</span> tag our JavaScript bundle(including for
-                            positioning dropdowns, poppers , and tooltips) before the closing <span
-                                style="color: crimson;">&lt;/body&gt;</span>. Learn more about our <a
-                                href="proper resopnsive behaviour">CDN links.</a></p>
-                    </li>
-                    <div class="code-example" style="margin-top: 20px;">
-        
-                        <pre><code>
-            &lt;!doctype html&gt;
-            &lt;html lang="en"&gt;
-                &lt;head&gt;
-                    &lt;meta charset="utf-8"&gt;
-                    &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
-                    &lt;title&gt;PixelUi demo&lt;/title&gt;
-                    &lt;link href=""https://cdn.jsdeliver.net/npm/pixel@5.3.3.min.css" rel="stylesheet" crossorgin="ananymous"&gt;
-                &lt;/head&gt;
-                &lt;body&gt;
-                    &lt;h1&gt;Hellow world&lt;/h1&gt;
-                    &lt;script href=""https://cdn.jsdeliver.net/npm/pixel@5.3.3.min.css" rel="stylesheet" crossorgin="ananymous"&gt;&lt;/script&gt;
-                &lt;/body&gt;
-            &lt;/html&gt;
-                    </code></pre>
-        
-                    </div>
-        
-                    <p style="margin-top: 20px;">You can also include <a href="">Proper</a> and our JS seperately. If you dont
-                        plan to use dropdowns,popovers or tooltips, ave some kilobyte by not including Propers.</p>
-                    <div class="code-example" style="margin-top: 20px;">
-        
-                        <pre><code>
-                    &lt;script href=""https://cdn.jsdeliver.net/npm/pixel@5.3.3.min.css" rel="stylesheet" crossorgin="ananymous"&gt;&lt;/script&gt;    
-                    </code></pre>
-                    </div>
-        
-                    <li style="margin-top: 20px;">
-                        <p>Hello,world! Open the page in your browser of choice to see your Bootstrapped page. Now you can start
-                            building with Bootstrap by creating your own <a href="">layout</a> adding dozens of <a
-                                href="">components</a> and utilizing <a href="">our official examples.</a></p>
-                    </li>
-                </ol>
-            </div>
-        
-            <div class="container">
-                <h2>CDN links</h2>
-                <p>As reference ,here are our primary CDN Links.</p>
-        
-                <div class="subContainerParent">
-                    <div class="subContainer1">
-                        <p class="subContainer1p1">Description</p>
-                        <p class="subContainer1p2">URL</p>
-                    </div>
-                    <div class="subContainer1">
-                        <p class="subContainer1p1">CSS</p>
-                        <p class="subContainer1p2" style="color: crimson;">https://cdn.jsdelivr.net/npm/pixel@5.3.3/dist.min.css
-                        </p>
-                    </div>
-                    <div class="subContainer1">
-                        <p class="subContainer1p1">Description</p>
-                        <p class="subContainer1p2" style="color: crimson;">
-                            https://cdn.jsdelivr.net/npm/pixelui@5.3.3/pixelui.min.js</p>
-                    </div>
-                </div>
-                <p>You can also use the CDN to fetch any of our <a href="">additional builds listed in the Contents page</a></p>
-            </div>
-        
-            <div class="container">
-                <h2>Next steps</h2>
-                <ul>
-                    <li>
-                        <p>Read a bit more about some</p><a href="">important global environment settings</a> that Pixel
-                        utilizes
-                    </li>
-                    <li>
-                        <p>Read about what’s included in Bootstrap in our <a href="">contents sections</a> and the list of <a
-                                href="">component that require javascript</a> below</p>
-                    </li>
-                    <li>
-                        <p>Need a little more power? Consider building with Bootstrap by i <a href="">including the source files
-                                via package manager.</a></p>
-                    </li>
-                    <li>
-                        <p>Looking to use Bootstrap as a module with <span style="color: crimson;">&lt;script
-                                type="module"&gt;</span> please refer our Introduction section.</p>
-                    </li>
-                </ul>
-            </div>
-        
-        
-            <div class="container">
-                <h2>JS Components</h2>
-                <p>Curious which components explicitly require our JavaScript and Popper? If you’re at all unsure about the
-                    general page structure, keep reading for an example page template.</p>
-        
-                <ul>
-                    <li>
-                        <p>Alerts for dismissing</p>
-                    </li>
-                    <li>
-                        <p>Buttons for toggling states and checkbox/radio functionality</p>
-                    </li>
-                    <li>
-                        <p>Carousel for all slide behaviors, controls, and indicators</p>
-                    </li>
-                    <li>
-                        <p>Collapse for toggling visibility of content</p>
-                    </li>
-                    <li>
-                        <p>Dropdowns for displaying and positioning (also requires <a href="">Popper</a>)</p>
-                    </li>
-                    <li>
-                        <p>Modals for displaying, positioning, and scroll behavior</p>
-                    </li>
-                    <li>
-                        <p>Navbar for extending our Collapse and Offcanvas plugins to implement responsive behaviors</p>
-                    </li>
-                    <li>
-                        <p>Navs with the Tab plugin for toggling content panes</p>
-                    </li>
-                    <li>
-                        <p>Offcanvases for displaying, positioning, and scroll behavior</p>
-                    </li>
-                    <li>
-                        <p>Scrollspy for scroll behavior and navigation updates</p>
-                    </li>
-                    <li>
-                        <p>Toasts for displaying and dismissing</p>
-                    </li>
-                    <li>
-                        <p>Tooltips and popovers for displaying and positioning (also requires <a href="">Popper</a>)</p>
-                    </li>
-                </ul>
-            </div>
-        
-            <div class="container">
-                <h2>Important globals</h2>
-                <p>Pixels employs a handful of important global styles and settings, all of which are almost exclusively geared
-                    towards the normalization of cross browser styles. Let’s dive in.</p>
-            </div>
-        
-            <div class="container">
-                <h2>HTML5 doctyle</h2>
-                <p>Pixel requires the use of the HTML5 doctype. Without it, you’ll see some funky and incomplete styling.</p>
-        
-                <div class="code-example">
-                    <pre><code>
-            &lt;!doctype html&gt;
-            
-            &lt;html lang="en"&gt;
-                
-                ...
-        
-            &lt;/html&gt;
-                </code></pre>
-                </div>
-        
-        
-            </div>
-        
-            <div class="container">
-                <h2>Viewport meta</h2>
-                <p>pixel is developed mobile first, a strategy in which we optimize code for mobile devices first and then scale
-                    up components as necessary using CSS media queries. To ensure proper rendering and touch zooming for all
-                    devices, add the responsive viewport meta tag to your <span style="color: crimson;">&lt;head&gt;</span></p>
-        
-                <div class="code-example">
-                    <pre><code>
-            &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
-                </code></pre>
-                </div>
-        
-        
-            </div>
-        
-            <div class="container">
-                <h2>Box-sizing</h2>
-                <p>For more straightforward sizing in CSS, we switch the global <span
-                        style="color: crimson;">box-sizing</span>value from <span style="color: crimson;">content-box</span> to
-                    <span style="color: crimson;">border-box</span>. This ensures <span style="color: crimson;">padding</span>
-                    does not affect the final computed width of an element, but it can cause problems with some third-party
-                    software like Google Maps and Google Custom Search Engine.</p>
-                <p>On the rare occasion you need to override it, use something like the following:</p>
-                <div class="code-example">
-                    <pre><code>
-            .selector-for-some-widget {
-                box-sizing: content-box;
-            }
-                </code></pre>
-                </div>
-                <p>With the above snippet, nested elements—including generated content via <span
-                        style="color: crimson;">::before</span> and <span style="color: crimson;">::after</span> will inherit
-                    the specified <span style="color: crimson;">box-sizing</span> for that <span
-                        style="color: crimson;">.selector-for-some-widget.</span></p>
-                <p>Learn more about <a href="">box model and sizing at CSS Tricks.</a></p>
-            </div>
-        
-            <div class="container">
-                <h2>Reboot</h2>
-                <p>For improved cross-browser rendering, we use <a href="">Reboot</a>  to correct inconsistencies across browsers and devices while providing slightly more opinionated resets to common HTML elements.</p>
-            </div>
-        
-            <div class="container">
-                <h2>Community</h2>
-                <p>Stay up-to-date on the development of Pixel and reach out to the community with these helpful resources.</p>
-        
-                <ul>
-                    <li><p>Read and subscribe to <a href="">The official Pixel Blog</a></p></li>
-                    <li><p>Ask questions and explore <a href="">our GitHub Discussions</a></p></li>
-                    <li><p>Discuss, ask questions, and more on <a href="">the community Discord</a> or <a href="">Pixel subreddit.</a></p></li>
-                    <li><p>Chat with fellow Pixelers in IRC. On the <span>irc.libera.chat</span> server,in the <span style="color: crimson;">#pixelui</span> channel</p></li>
-                    <li><p>Implementation help may be found at Stack Overflow (tagged <a href="">Pixel 5</a>).</p></li>
-                    <li><p>Developers should use the keyword <span style="color: crimson;">PicelUi</span> on packages that modify or add to the functionality of PixelUi  when distributing through <a href="">npm</a> or similar delivery mechanisms for maximum discoverability.</p></li>
-                </ul>
-                <p>You can also follow <a href="">getpixelui on Twitter</a> for the latest gossips and awsome music vedios.</p>
-            </div>
-        
+            <pre><code>&lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"&gt;&lt;/script&gt;
+            </code></pre>
             
         </div>
+    </div>
+    
+    <div class="container">
+        <h2>Separate        </h2>
+        <p>If you decide to go with the separate scripts solution, Popper must come first (if you’re using tooltips or popovers), and then our JavaScript plugins.</p>        
+        <div class="code-example">
+            <div class="code-header">
+                <span>EDITABLE EXAMPLE</span>
+                <button class="copy-btn">COPY</button>
+            </div>
+            <pre><code>&lt;!-- Include Popper.js --&gt;
+                &lt;script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"&gt;&lt;/script&gt;
+                
+                &lt;!-- Include Bootstrap's JavaScript --&gt;
+                &lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"&gt;&lt;/script&gt;
+                </code></pre>                
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Modules        </h2>
+        <p>If you use &lt;script type="module"&gt;, please refer to our using Bootstrap as a module section.</p>        
+    </div>
+    <div class="container">
+        <h2>Components        </h2>
+        <p>Curious which components explicitly require our JavaScript and Popper? Click the show components link below. If you’re at all unsure about the general page structure, keep reading for an example page template.</p>
+    </div>
+    <div class="container">
+        <h2>Starter template  </h2>
+        <p>Be sure to have your pages set up with the latest design and development standards. That means using an HTML5 doctype and including a viewport meta tag for proper responsive behaviors. Put it all together and your pages should look like this:</p>        
+        <div class="code-example">
+            <div class="code-header">
+                <span>EDITABLE EXAMPLE</span>
+                <button class="copy-btn">COPY</button>
+            </div>
+<pre><code>&lt;!doctype html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;!-- Required meta tags --&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+
+    &lt;!-- Bootstrap CSS --&gt;
+    &lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"&gt;
+
+    &lt;title&gt;Hello, world!&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Hello, world!&lt;/h1&gt;
+
+    &lt;!-- Optional JavaScript; choose one of the two! --&gt;
+
+    &lt;!-- Option 1: Bootstrap Bundle with Popper --&gt;
+    &lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"&gt;&lt;/script&gt;
+
+    &lt;!-- Option 2: Separate Popper and Bootstrap JS --&gt;
+    &lt;!--
+    &lt;script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"&gt;&lt;/script&gt;
+    &lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"&gt;&lt;/script&gt;
+    --&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+        </div>
+    </div>
+
+    <div class="container">
+        <p>For next steps, visit the <a href=""> Layout docs</a> or <a href="">our official examples </a>to start laying out your site’s content and components.</p>        
+    </div>
+    <div class="container">
+        <h2>Important globals        </h2>
+        <p>Bootstrap employs a handful of important global styles and settings that you’ll need to be aware of when using it, all of which are almost exclusively geared towards the normalization of cross browser styles. Let’s dive in.</p>        
+    </div>
+    <div class="container">
+        <h2>HTML5 doctype        </h2>
+        <p>Bootstrap requires the use of the HTML5 doctype. Without it, you’ll see some funky incomplete styling, but including it shouldn’t cause any considerable hiccups.</p>        
+
+        <div class="code-example">
+            <div class="code-header">
+                <span>EDITABLE EXAMPLE</span>
+                <button class="copy-btn">COPY</button>
+            </div>
+            <pre><code>&lt;html lang="en"&gt;
+                ...
+              &lt;/html&gt;
+              </code></pre>
+              
+        </div>
+
+    </div>
+
+    <div class="container">
+        <h2>Responsive meta tag </h2>
+        <p>Bootstrap is developed mobile first, a strategy in which we optimize code for mobile devices first and then scale up components as necessary using CSS media queries. To ensure proper rendering and touch zooming for all devices, <b> add the responsive viewport meta tag to your</b> &lt;head&gt;.</p>
+        <div class="code-example">
+            <div class="code-header">
+                <span>EDITABLE EXAMPLE</span>
+                <button class="copy-btn">COPY</button>
+            </div>
+            <pre><code>&lt;meta name="viewport" content="width=device-width, initial-scale=1" &gt;  </code></pre>
+        </div>
+
+    </div>
+    
+    <div class="container">
+        <p>You can see an example of this in action in the <a href="">starter template.</a>        </p>
+    </div>
+
+</div>
     
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
