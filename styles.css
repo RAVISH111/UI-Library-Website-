@@ -241,6 +241,7 @@ nav img {
 }
 
 .logo-item {
+    /* border: 1px solid; */
     flex: 2 2 250px; /* Flex-basis allows wrapping and ensures items are responsive */
     max-width: 200px; /* Maximum width for larger screens */
 }

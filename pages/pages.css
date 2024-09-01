@@ -172,6 +172,9 @@ textarea {
         border-right: none;
         padding: 0;
     }
+    .sidebar-margin{
+        margin-top: 1.125rem;
+    }
 
     .layout {
         flex-direction: column;
