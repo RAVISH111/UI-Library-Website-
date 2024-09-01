@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Alignment Example</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="../pages.css"> -->
+    <link rel="stylesheet" href="intro.css">
+
+</head>
+
+<body>
+
+    <div class="layout">
+        <!-- Sidebar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand d-lg-none" href="#">Menu</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSidebar" aria-controls="navbarSidebar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSidebar">
+                <div class="sidebar">
+                    <div class="sidebar-section">
+                        <button class="accordion">Getting started <i class="fa-solid fa-chevron-down"></i></button>
+                        <div class="panel">
+                            <a href="intro.html">Introduction</a>
+                            <a href="#">Download</a>
+                            <a href="../content/Typography/typography.html">Contents</a>
+                            <a href="#">Browsers & devices</a>
+                            <a href="#">JavaScript</a>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-section">
+                        <button class="accordion">Layout <i class="fa-solid fa-chevron-down"></i></button>
+                        <div class="panel">
+                            <a href="">Breakpoints</a>
+                            <a href="">Containers</a>
+                            <a href="../spacing/box.html">Grid</a>
+                            <a href="">Columns</a>
+                            <a href="">Gutters</a>
+                            <a href="">Utilities</a>
+                            <a href="">Z-index </a>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-section">
+                        <button class="accordion">Content <i class="fa-solid fa-chevron-down"></i></button>
+                        <div class="panel">
+                            <a href="../content/Typography/typography.html">Typography</a>
+                            <a href="../content/images/images.html">Images</a>
+                            <a href="../content/tables/tables.html">Tables</a>
+                            <a href="#">Figures</a>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-section">
+                        <button class="accordion">Forms <i class="fa-solid fa-chevron-down"></i></button>
+                        <div class="panel">       
+                            <a href="../forms/overview/box.html">Overview</a>
+                            <a href="">Form control</a>
+                            <a href="">Select</a>
+                            <a href="">Checks & radios</a>
+                            <a href="">Range</a>
+                            <a href="">Input group</a>
+                            <a href="">Floating labels</a>    
+                            <a href="">Layout</a>  
+                            <a href="">Validation</a>              
+
+                        </div>
+                    </div>
+
+                    <div class="sidebar-section">
+                        <button class="accordion">Components <i class="fa-solid fa-chevron-down"></i></button>
+                        <div class="panel">
+                            <a href="">Alerts</a>
+                            <a href="../button1/box.html">Buttons</a>
+                            <a href="">Button group</a>
+                            <a href="">Card</a>
+                            <a href="">Carousel</a>
+                            <a href="../buttons/box.html">Close button</a>
+                            <a href="">Collapse</a>
+                            <a href="">Dropdowns</a>
+                            <a href="">List group</a>
+                            <a href="">Modal</a>
+                            <a href="">Navs & tabs</a>
+                            <a href="">Navbar</a>
+                            <a href="">Pagination</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <div class="main-content">
+
+            <div class="container">
+                <h2 class="biggerText">Get started with PixelUi</h2>
+                <p style="font-size: large;">Pixel Ui is a powerful,feature-packed frontend toolkit.Build anything from
+                    prototype to production in minutes</p>
+                <div class="code-example">
+                    <!-- <div class="code-header">
+                        <span>EDITABLE EXAMPLE</span>
+                        <button class="copy-btn">COPY</button>
+                    </div> -->
+                    <pre><code>getting started with PixelUI</code></pre>
+                </div>
+        
+                <!-- <div class="description">
+                    <p><strong>Button:</strong> The button component with support for custom icons, spinners, etc.</p>
+                    <p><strong>ButtonGroup:</strong> Used to group buttons whose actions are related, with an option to flush them together.</p>
+                </div> -->
+            </div>
+        
+            <!-- ----------------------------------------------------------------------------- -->
+        
+            <div class="container">
+                <h2>Quick start</h2>
+                <p>Get started by including Pixel Ui's production-ready CSS and JavaScrapt via CDN without the need for any
+                    build steps.See it in practice with this <a href="">Pixel Ui CodePen demo.</a></p>
+            </div>
+        
+        
+            <div class="container">
+                <ol>
+                    <li>
+                        <p>Create a new <span style="color: crimson;">index,html</span> file in your project root. include the
+                            <span style="color: crimson;">&lt;meta name="viewport"&gt;</span> tag as well for <a
+                                href="proper resopnsive behaviour"></a> in mobile devices.</p>
+                    </li>
+                    <div class="code-example" style="margin-top: 20px;">
+        
+                        <pre><code>
+            &lt;!doctype html&gt;
+            &lt;html lang="en"&gt;
+                &lt;head&gt;
+                    &lt;meta charset="utf-8"&gt;
+                    &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+                    &lt;title&gt;PixelUi demo&lt;/title&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+                    &lt;h1&gt;Hellow world&lt;/h1&gt;
+                &lt;/body&gt;
+            &lt;/html&gt;
+                    </code></pre>
+        
+                    </div>
+        
+                    <!--  -->
+        
+                    <li style="margin-top: 20px;">
+                        <p>Include Pixel's CSS and JS.place the <span style="color: crimson;">&lt;link&gt;</span> tag in <span
+                                style="color: crimson;">&lt;head&gt;</span> for our CSS,andn the <span
+                                style="color: crimson;">&lt;script&gt;</span> tag our JavaScript bundle(including for
+                            positioning dropdowns, poppers , and tooltips) before the closing <span
+                                style="color: crimson;">&lt;/body&gt;</span>. Learn more about our <a
+                                href="proper resopnsive behaviour">CDN links.</a></p>
+                    </li>
+                    <div class="code-example" style="margin-top: 20px;">
+        
+                        <pre><code>
+            &lt;!doctype html&gt;
+            &lt;html lang="en"&gt;
+                &lt;head&gt;
+                    &lt;meta charset="utf-8"&gt;
+                    &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+                    &lt;title&gt;PixelUi demo&lt;/title&gt;
+                    &lt;link href=""https://cdn.jsdeliver.net/npm/pixel@5.3.3.min.css" rel="stylesheet" crossorgin="ananymous"&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+                    &lt;h1&gt;Hellow world&lt;/h1&gt;
+                    &lt;script href=""https://cdn.jsdeliver.net/npm/pixel@5.3.3.min.css" rel="stylesheet" crossorgin="ananymous"&gt;&lt;/script&gt;
+                &lt;/body&gt;
+            &lt;/html&gt;
+                    </code></pre>
+        
+                    </div>
+        
+                    <p style="margin-top: 20px;">You can also include <a href="">Proper</a> and our JS seperately. If you dont
+                        plan to use dropdowns,popovers or tooltips, ave some kilobyte by not including Propers.</p>
+                    <div class="code-example" style="margin-top: 20px;">
+        
+                        <pre><code>
+                    &lt;script href=""https://cdn.jsdeliver.net/npm/pixel@5.3.3.min.css" rel="stylesheet" crossorgin="ananymous"&gt;&lt;/script&gt;    
+                    </code></pre>
+                    </div>
+        
+                    <li style="margin-top: 20px;">
+                        <p>Hello,world! Open the page in your browser of choice to see your Bootstrapped page. Now you can start
+                            building with Bootstrap by creating your own <a href="">layout</a> adding dozens of <a
+                                href="">components</a> and utilizing <a href="">our official examples.</a></p>
+                    </li>
+                </ol>
+            </div>
+        
+            <div class="container">
+                <h2>CDN links</h2>
+                <p>As reference ,here are our primary CDN Links.</p>
+        
+                <div class="subContainerParent">
+                    <div class="subContainer1">
+                        <p class="subContainer1p1">Description</p>
+                        <p class="subContainer1p2">URL</p>
+                    </div>
+                    <div class="subContainer1">
+                        <p class="subContainer1p1">CSS</p>
+                        <p class="subContainer1p2" style="color: crimson;">https://cdn.jsdelivr.net/npm/pixel@5.3.3/dist.min.css
+                        </p>
+                    </div>
+                    <div class="subContainer1">
+                        <p class="subContainer1p1">Description</p>
+                        <p class="subContainer1p2" style="color: crimson;">
+                            https://cdn.jsdelivr.net/npm/pixelui@5.3.3/pixelui.min.js</p>
+                    </div>
+                </div>
+                <p>You can also use the CDN to fetch any of our <a href="">additional builds listed in the Contents page</a></p>
+            </div>
+        
+            <div class="container">
+                <h2>Next steps</h2>
+                <ul>
+                    <li>
+                        <p>Read a bit more about some</p><a href="">important global environment settings</a> that Pixel
+                        utilizes
+                    </li>
+                    <li>
+                        <p>Read about what’s included in Bootstrap in our <a href="">contents sections</a> and the list of <a
+                                href="">component that require javascript</a> below</p>
+                    </li>
+                    <li>
+                        <p>Need a little more power? Consider building with Bootstrap by i <a href="">including the source files
+                                via package manager.</a></p>
+                    </li>
+                    <li>
+                        <p>Looking to use Bootstrap as a module with <span style="color: crimson;">&lt;script
+                                type="module"&gt;</span> please refer our Introduction section.</p>
+                    </li>
+                </ul>
+            </div>
+        
+        
+            <div class="container">
+                <h2>JS Components</h2>
+                <p>Curious which components explicitly require our JavaScript and Popper? If you’re at all unsure about the
+                    general page structure, keep reading for an example page template.</p>
+        
+                <ul>
+                    <li>
+                        <p>Alerts for dismissing</p>
+                    </li>
+                    <li>
+                        <p>Buttons for toggling states and checkbox/radio functionality</p>
+                    </li>
+                    <li>
+                        <p>Carousel for all slide behaviors, controls, and indicators</p>
+                    </li>
+                    <li>
+                        <p>Collapse for toggling visibility of content</p>
+                    </li>
+                    <li>
+                        <p>Dropdowns for displaying and positioning (also requires <a href="">Popper</a>)</p>
+                    </li>
+                    <li>
+                        <p>Modals for displaying, positioning, and scroll behavior</p>
+                    </li>
+                    <li>
+                        <p>Navbar for extending our Collapse and Offcanvas plugins to implement responsive behaviors</p>
+                    </li>
+                    <li>
+                        <p>Navs with the Tab plugin for toggling content panes</p>
+                    </li>
+                    <li>
+                        <p>Offcanvases for displaying, positioning, and scroll behavior</p>
+                    </li>
+                    <li>
+                        <p>Scrollspy for scroll behavior and navigation updates</p>
+                    </li>
+                    <li>
+                        <p>Toasts for displaying and dismissing</p>
+                    </li>
+                    <li>
+                        <p>Tooltips and popovers for displaying and positioning (also requires <a href="">Popper</a>)</p>
+                    </li>
+                </ul>
+            </div>
+        
+            <div class="container">
+                <h2>Important globals</h2>
+                <p>Pixels employs a handful of important global styles and settings, all of which are almost exclusively geared
+                    towards the normalization of cross browser styles. Let’s dive in.</p>
+            </div>
+        
+            <div class="container">
+                <h2>HTML5 doctyle</h2>
+                <p>Pixel requires the use of the HTML5 doctype. Without it, you’ll see some funky and incomplete styling.</p>
+        
+                <div class="code-example">
+                    <pre><code>
+            &lt;!doctype html&gt;
+            
+            &lt;html lang="en"&gt;
+                
+                ...
+        
+            &lt;/html&gt;
+                </code></pre>
+                </div>
+        
+        
+            </div>
+        
+            <div class="container">
+                <h2>Viewport meta</h2>
+                <p>pixel is developed mobile first, a strategy in which we optimize code for mobile devices first and then scale
+                    up components as necessary using CSS media queries. To ensure proper rendering and touch zooming for all
+                    devices, add the responsive viewport meta tag to your <span style="color: crimson;">&lt;head&gt;</span></p>
+        
+                <div class="code-example">
+                    <pre><code>
+            &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+                </code></pre>
+                </div>
+        
+        
+            </div>
+        
+            <div class="container">
+                <h2>Box-sizing</h2>
+                <p>For more straightforward sizing in CSS, we switch the global <span
+                        style="color: crimson;">box-sizing</span>value from <span style="color: crimson;">content-box</span> to
+                    <span style="color: crimson;">border-box</span>. This ensures <span style="color: crimson;">padding</span>
+                    does not affect the final computed width of an element, but it can cause problems with some third-party
+                    software like Google Maps and Google Custom Search Engine.</p>
+                <p>On the rare occasion you need to override it, use something like the following:</p>
+                <div class="code-example">
+                    <pre><code>
+            .selector-for-some-widget {
+                box-sizing: content-box;
+            }
+                </code></pre>
+                </div>
+                <p>With the above snippet, nested elements—including generated content via <span
+                        style="color: crimson;">::before</span> and <span style="color: crimson;">::after</span> will inherit
+                    the specified <span style="color: crimson;">box-sizing</span> for that <span
+                        style="color: crimson;">.selector-for-some-widget.</span></p>
+                <p>Learn more about <a href="">box model and sizing at CSS Tricks.</a></p>
+            </div>
+        
+            <div class="container">
+                <h2>Reboot</h2>
+                <p>For improved cross-browser rendering, we use <a href="">Reboot</a>  to correct inconsistencies across browsers and devices while providing slightly more opinionated resets to common HTML elements.</p>
+            </div>
+        
+            <div class="container">
+                <h2>Community</h2>
+                <p>Stay up-to-date on the development of Pixel and reach out to the community with these helpful resources.</p>
+        
+                <ul>
+                    <li><p>Read and subscribe to <a href="">The official Pixel Blog</a></p></li>
+                    <li><p>Ask questions and explore <a href="">our GitHub Discussions</a></p></li>
+                    <li><p>Discuss, ask questions, and more on <a href="">the community Discord</a> or <a href="">Pixel subreddit.</a></p></li>
+                    <li><p>Chat with fellow Pixelers in IRC. On the <span>irc.libera.chat</span> server,in the <span style="color: crimson;">#pixelui</span> channel</p></li>
+                    <li><p>Implementation help may be found at Stack Overflow (tagged <a href="">Pixel 5</a>).</p></li>
+                    <li><p>Developers should use the keyword <span style="color: crimson;">PicelUi</span> on packages that modify or add to the functionality of PixelUi  when distributing through <a href="">npm</a> or similar delivery mechanisms for maximum discoverability.</p></li>
+                </ul>
+                <p>You can also follow <a href="">getpixelui on Twitter</a> for the latest gossips and awsome music vedios.</p>
+            </div>
+        
+            
+        </div>
+    
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+<script>
+    var accordions = document.getElementsByClassName("accordion");
+
+    for (var i = 0; i < accordions.length; i++) {
+        accordions[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+                panel.style.display = "none";
+            } else {
+                panel.style.display = "block";
+            }
+        });
+    }
+</script>
+
+</body>
+
+</html>
