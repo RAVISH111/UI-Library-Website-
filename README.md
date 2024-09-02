@@ -13,6 +13,11 @@ This project is a UI Library website that provides a collection of reusable comp
 **Tailwind CSS**: For easy and flexible component styling.
 **Git & GitHub**: For version control and collaboration.
 ## Installation
+
+linke of website :
+   ```bash
+      https://66d4a088dc699a0fe9ccf108--teal-starlight-b2e8d8.netlify.app/
+   ```
 Clone the repository:
    ```bash
    git clone https://github.com/your-username/ui-library.git
@@ -32,3 +37,9 @@ Create your feature branch: `git checkout -b feature-name`.
 Commit your changes: `git commit -m 'Add some feature'`.
 Push to the branch: `git push origin feature-name`.
 Open a pull request.
+
+
+
+
+![image](https://github.com/user-attachments/assets/685591b7-731e-4da4-9f84-1f6e8dad35db)
+
