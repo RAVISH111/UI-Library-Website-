@@ -24,9 +24,9 @@ my-app/
 ## Features
 List out the key features of your application.
 
-- Feature 1
-- Feature 2
-- Feature 3
+- Dark/Light
+- Resposive
+- login
 
 ## design decisions or assumptions
 List your design desissions & assumptions
