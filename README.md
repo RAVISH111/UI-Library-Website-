@@ -16,7 +16,7 @@ This project is a UI Library website that provides a collection of reusable comp
 
 linke of website :
    ```bash
-      https://66d4a088dc699a0fe9ccf108--teal-starlight-b2e8d8.netlify.app/
+      https://classy-palmier-29f061.netlify.app/
    ```
 Clone the repository:
    ```bash
